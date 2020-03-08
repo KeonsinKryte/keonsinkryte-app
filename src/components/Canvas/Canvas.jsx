@@ -34,8 +34,8 @@ class PerlinCircle {
 
             while (i++ !== this.segments) {
                 this.findNextCoords(p, i);
-                p.vertex(pX, pY);
 
+                p.vertex(pX, pY);
                 pX = this.alphaX;
                 pY = this.alphaY;
             }
