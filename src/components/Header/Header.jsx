@@ -11,14 +11,32 @@ class Header extends Component {
             <header className="header">
                 <article className="header__left">
                     <div className="left__content">
-                        <Cover></Cover>
+                        <p className="left__title">
+                            I <img className="left__image" src={process.env.PUBLIC_URL + "/images/heart.svg"} alt="Red heart" /> <br /> Design
+                        </p>
+                        <b className="left__container">
+                            <div className="left__words">
+                                experiences. <br />
+                                game-changing ideas.<br />
+                                inclusive products.<br />
+                                for people.<br />
+                                easier life.<br />
+                            </div>
+                        </b>
+                        <article className="left__text">
+                            <h3 className="left__greeting">Hey!</h3>
+                            <p className="left__paragraph">
+                                I'm <strong><span className="left__highlighted"> Mauricio Botero </span></strong>, a designer and researcher in love of creating great experiences for users. Capable of research, analyze and propouse new ideas based on user’s necessities.
+                                <br />
+                                <br />
+                                Emphatic and believing in design as a research, analytical, versatile, transversal and proactive discipline.
+                        </p>
+                        </article>
                     </div>
                 </article>
                 <article className="header__right">
                     <div className="right__content">
-                        <h1 className="right__title">
-                            I ♥ Design experiences
-                        </h1>
+                        <Cover></Cover>
                     </div>
                 </article>
             </header>

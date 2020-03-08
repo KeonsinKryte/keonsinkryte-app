@@ -1,29 +1,33 @@
 #container {
-  perspective: 7px;
+  perspective: 10px;
 }
 
 .inner {
   width: 35em;
   height: 35em;
   z-index: 0;
+  overflow: hidden;
   position: relative;
   vertical-align: middle;
   transition: transform 0.5s;
+  cursor: none;
 
   &__image {
     height: 50%;
     width: auto;
-    perspective: 1px;
+    perspective: 5px;
     margin: auto auto auto auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    overflow: hidden;
     position: absolute;
     z-index: 1;
   }
 
   &__blur {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     z-index: 0;

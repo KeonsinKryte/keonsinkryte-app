@@ -1,26 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
 
-$main-color: #0054FF;
-$main-font: 'Inter';
+$main-color: #0054ff !global;
+$main-color-alpha: #0054ff75 !global;
+$main-font: "Inter" !global;
 
 @import "./components/Cover/cover";
 @import "./components/Header/header";
 
 body {
-  width: 100%;
-  min-width: 100vh;
-
+  max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin: auto;
   background-color: white;
+  overflow-x: hidden;
 }
 
-h1{
+h1 {
   color: $main-color;
   font-family: $main-font, sans-serif;
   font-weight: 700;
   font-size: 5em;
+}
+
+h3 {
+  color: $main-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 0.3em;
 }

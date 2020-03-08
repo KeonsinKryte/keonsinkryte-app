@@ -1,14 +1,104 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 100%;
+.header {
+  display: flex;
+  flex-direction: row;
+  max-width: 90vw;
+  margin: auto;
 
-    &__left{
-        width: 50%;
-    }
-    
-    &__right{
-        width: 50%;
-    }
+  &__left {
+    width: 50%;
+    background: white;
+  }
+
+  &__right {
+    width: 50%;
+    padding: 1em 2em;
+  }
+}
+
+.left {
+  &__content {
+    padding: 1em 2em;
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: $main-color;
+  }
+
+  &__container {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    top: 0em;
+  }
+
+  &__title {
+    height: 1.5em;
+    font-size: 1.35em;
+    float: left;
+    margin-right: 0.3em;
+  }
+
+  &__image {
+    width: 0.75em;
+    height: auto;
+  }
+
+  &__text{
+      margin-top: 8em;
+  }
+
+  &__highlighted{
+      background-color: $main-color;
+      color: white;
+  }
+
+  &__paragraph{
+      font-size: 0.30em;
+      font-weight: 300;
+  }
+
+  &__words {
+    display: inline-block;
+    font-weight: 500;
+    font-style: italic;
+    color: $main-color;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: move 5s;
+    -moz-animation: move 5s;
+    -o-animation: move 5s;
+    animation: move 5s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 0em;
+  }
+  20% {
+    top: -0.25em;
+  }
+  40% {
+    top: -1.4em;
+  }
+  60% {
+    top: -2.6em;
+  }
+  80% {
+    top: -3.90em;
+  }
 }
