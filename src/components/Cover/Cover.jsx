@@ -1,11 +1,39 @@
 import React, { Component } from "react";
 
 class Cover extends Component {
-    constructor() {
-        super();
-    }
-
     componentDidMount() {
+        /*(function ($) {
+            var card = $(".container");
+            card.on('mousemove', function (e) {
+                var x = e.clientX - $(this).offset().left + $(window).scrollLeft();
+                var y = e.clientY - $(this).offset().top + $(window).scrollTop();
+
+                var rY = map(x, 0, $(this).width(), -17, 17);
+                var rX = map(y, 0, $(this).height(), -17, 17);
+
+                $(this).children(".inner").css("transform", "rotateY(" + rY + "deg)" + " " + "rotateX(" + -rX + "deg)");
+            });
+
+            card.on('mouseenter', function () {
+                $(this).children(".inner").css({
+                    transition: "all " + 0.05 + "s" + " linear",
+                });
+            });
+
+            card.on('mouseleave', function () {
+                $(this).children(".inner").css({
+                    transition: "all " + 0.2 + "s" + " linear",
+                });
+
+                $(this).children(".inner").css("transform", "rotateY(" + 0 + "deg)" + " " + "rotateX(" + 0 + "deg)");
+            });
+
+            function map(x, in_min, in_max, out_min, out_max) {
+                return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+            }
+        })();*/
+
+
         (function () {
             // Init
             var container = document.getElementById("container"),
@@ -87,7 +115,7 @@ class Cover extends Component {
 
     render() {
         return (
-            <div id="container">
+            <div id="container" className="container">
                 <div id="inner" className="inner">
                     <img className="inner__image" src={process.env.PUBLIC_URL + "images/KeonsinKryte.svg"} alt="KeonsinKryte logo" />
                     <div className="inner__blur"></div>

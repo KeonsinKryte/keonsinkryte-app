@@ -1,15 +1,18 @@
 #container {
   perspective: 10px;
+  perspective-origin: center;
 }
 
 .inner {
-  width: 35em;
-  height: 35em;
+  width: 60vh;
+  height: 60vh;
+  max-width: 60vh;
   z-index: 0;
   overflow: hidden;
   position: relative;
   vertical-align: middle;
   transition: transform 0.5s;
+  float: right;
   cursor: none;
 
   &__image {
@@ -17,7 +20,6 @@
     width: auto;
     perspective: 5px;
     margin: auto auto auto auto;
-    left: 0;
     right: 0;
     top: 0;
     bottom: 0;

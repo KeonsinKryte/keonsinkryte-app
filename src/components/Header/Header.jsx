@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Cover from '../Cover/Cover';
 
 class Header extends Component {
-    constructor() {
-        super();
-    }
-
     render() {
         return (
             <header className="header">
@@ -24,7 +20,7 @@ class Header extends Component {
                             </div>
                         </b>
                         <article className="left__text">
-                            <h3 className="left__greeting">Hey!</h3>
+                            <h2 className="left__greeting">Hey!</h2>
                             <p className="left__paragraph">
                                 I'm <strong><span className="left__highlighted"> Mauricio Botero </span></strong>, a designer and researcher in love of creating great experiences for users. Capable of research, analyze and propouse new ideas based on user’s necessities.
                                 <br />

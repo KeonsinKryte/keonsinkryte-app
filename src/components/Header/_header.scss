@@ -1,8 +1,9 @@
 .header {
   display: flex;
   flex-direction: row;
-  max-width: 90vw;
+  max-width: 100%;
   margin: auto;
+  margin-top: 7vh;
 
   &__left {
     width: 50%;
@@ -11,13 +12,13 @@
 
   &__right {
     width: 50%;
-    padding: 1em 2em;
+    float: right;
   }
 }
 
 .left {
   &__content {
-    padding: 1em 2em;
+    padding: 1em 0em;
     font-family: $main-font, sans-serif;
     font-weight: 700;
     font-size: 4em;
@@ -36,7 +37,6 @@
     height: 1.5em;
     font-size: 1.35em;
     float: left;
-    margin-right: 0.3em;
   }
 
   &__image {
@@ -44,18 +44,22 @@
     height: auto;
   }
 
-  &__text{
-      margin-top: 8em;
+  &__text {
+    margin-top: 8em;
   }
 
-  &__highlighted{
-      background-color: $main-color;
-      color: white;
+  &__highlighted {
+    background-color: $main-color;
+    color: white;
   }
 
-  &__paragraph{
-      font-size: 0.30em;
-      font-weight: 300;
+  &__paragraph {
+    font-size: 0.3em;
+    font-weight: 300;
+  }
+
+  &__greeting {
+    font-size: 0.3em;
   }
 
   &__words {
@@ -68,20 +72,20 @@
     top: 0;
     left: 0;
 
-    -webkit-animation: move 5s;
-    -moz-animation: move 5s;
-    -o-animation: move 5s;
-    animation: move 5s;
+    -webkit-animation: move 7.5s;
+    -moz-animation: move 7.5s;
+    -o-animation: move 7.5s;
+    animation: move 7.5s;
 
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
   }
 }
 
@@ -99,6 +103,6 @@
     top: -2.6em;
   }
   80% {
-    top: -3.90em;
+    top: -3.9em;
   }
 }

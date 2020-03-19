@@ -1,21 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
 
-$main-color: #0054ff !global;
+$main-color: rgb(0, 84, 255) !global;
 $main-color-alpha: #0054ff75 !global;
 $main-font: "Inter" !global;
 
 @import "./components/Cover/cover";
 @import "./components/Header/header";
+@import "./components/Nav/nav";
+@import "./components/Footer/footer";
 
 body {
-  max-width: 500px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  max-width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 
   margin: auto;
   background-color: white;
-  overflow-x: hidden;
+
+  &__container {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -25,9 +39,58 @@ h1 {
   font-size: 5em;
 }
 
-h3 {
+h2 {
   color: $main-color;
   font-family: $main-font, sans-serif;
   font-weight: 700;
-  font-size: 0.3em;
+  font-size: 1.125em;
+}
+
+h3 {
+  color: white;
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 1.725em;
+}
+
+h4 {
+  color: white;
+  font-family: $main-font, sans-serif;
+  font-weight: 400;
+  font-size: 0.725em;
+}
+
+::-webkit-scrollbar {
+  width: 0.35vw;
+  height: 0.25vw;
+}
+::-webkit-scrollbar-button {
+  width: 1vw;
+  height: 0;
+  top: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #97b9ff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0054ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #0054ff;
+}
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-track:active {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
