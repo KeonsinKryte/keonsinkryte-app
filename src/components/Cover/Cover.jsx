@@ -107,9 +107,9 @@ class Cover extends Component {
 
             //--------------------------------------------------------
 
-            container.onmousemove = onMouseMoveHandler;
-            container.onmouseleave = onMouseLeaveHandler;
-            container.onmouseenter = onMouseEnterHandler;
+            window.onmousemove = onMouseMoveHandler;
+            window.onmouseleave = onMouseLeaveHandler;
+            window.onmouseenter = onMouseEnterHandler;
         })();
     }
 

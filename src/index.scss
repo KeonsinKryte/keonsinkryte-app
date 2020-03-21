@@ -9,6 +9,11 @@ $main-font: "Inter" !global;
 @import "./components/Nav/nav";
 @import "./components/Footer/footer";
 
+@import "./components/Projects/Viewer/viewer";
+@import "./components/Projects/Cognosis/cognosis";
+@import "./components/Projects/Duino/duino";
+@import "./components/Projects/Nasa/nasa";
+
 body {
   margin: 0;
   padding: 0;

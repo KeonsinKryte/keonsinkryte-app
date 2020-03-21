@@ -5,6 +5,7 @@ import Cover from '../Cover/Cover';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
+import Viewer from '../Projects/Viewer/Viewer';
 
 class App extends Component {
     render() {
@@ -14,7 +15,10 @@ class App extends Component {
                     <div className="app__container">
                         <Nav></Nav>
                         <Switch>
-                            <Route path='/' exact component={Header}></Route>
+                            <Route exact path='/'>
+                                <Header></Header>
+                                <Viewer></Viewer>
+                            </Route>
                         </Switch>
                     </div>
                     <Footer></Footer>
