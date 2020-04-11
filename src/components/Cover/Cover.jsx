@@ -117,7 +117,7 @@ class Cover extends Component {
         return (
             <div id="container" className="container">
                 <div id="inner" className="inner">
-                    <img className="inner__image" src={process.env.PUBLIC_URL + "images/KeonsinKryte.svg"} alt="KeonsinKryte logo" />
+                    <img className="inner__image" src={process.env.PUBLIC_URL + "/icons/KeonsinKryte.svg"} alt="KeonsinKryte logo" />
                     <div className="inner__blur"></div>
                 </div>
             </div>

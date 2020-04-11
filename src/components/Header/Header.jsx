@@ -8,7 +8,7 @@ class Header extends Component {
                 <article className="header__left">
                     <div className="left__content">
                         <p className="left__title">
-                            I <img className="left__image" src={process.env.PUBLIC_URL + "/images/heart.svg"} alt="Red heart" /> <br /> Design
+                            I <img className="left__image" src={process.env.PUBLIC_URL + "/icons/heart.svg"} alt="Red heart" /> <br /> Design
                         </p>
                         <b className="left__container">
                             <div className="left__words">
