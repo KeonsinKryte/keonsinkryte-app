@@ -6,6 +6,9 @@ import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Viewer from '../Projects/Viewer/Viewer';
+import Cognosis from '../Projects/Cognosis/Cognosis';
+import Duino from '../Projects/Duino/Duino';
+import Nasa from '../Projects/Nasa/Nasa';
 
 class App extends Component {
     render() {
@@ -18,6 +21,15 @@ class App extends Component {
                             <Route exact path='/'>
                                 <Header></Header>
                                 <Viewer></Viewer>
+                            </Route>
+                            <Route exact path='/projects/cognosis'>
+                                <Cognosis></Cognosis>
+                            </Route>
+                            <Route exact path='/projects/duino'>
+                                <Duino></Duino>
+                            </Route>
+                            <Route exact path='/projects/nasa'>
+                                <Nasa></Nasa>
                             </Route>
                         </Switch>
                     </div>

@@ -1,16 +1,46 @@
 .nasa {
-    width: 100%;
+    width: 95%;
     height: 50%;
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-left: 1.25vh;
+    padding-right: 1.25vh;
+
+    &__project {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 12.5vh;
+        text-align: center;
+
+        &-description {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &-information {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            height: fit-content;
+            margin: auto;
+
+            div{
+                width: 33%;
+                background-color: yellowgreen;
+            }
+        }
+    }
 
     &__cover {
         width: 100%;
-        height: 30vh;
+        height: 25vh;
         position: relative;
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         filter: grayscale(100%);
         background-image: url("/images/projects/nasa/thumbnail/nasa_thumbnail_background.jpg");
         transition: 1.5s;
@@ -58,21 +88,8 @@
     }
 
     &__decoration {
-        width: 10vh;
-        height: 10vh;
-        border-radius: 50%;
-        z-index: 5;
-        left: 0;
-        margin: auto auto auto auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: white;
-        background: linear-gradient(-45deg, #FEFEB8, #02FF07, #FEFE00);
-        filter: blur(1rem);
-        background-size: 300% 300%;
-        animation: gradient 5s ease infinite;
+        font-size: 6em;
+        text-align: center;
     }
 
     &__text {
@@ -84,8 +101,13 @@
         p {
             color: #514f54;
             font-family: $main-font, sans-serif;
-            font-weight: 400;
+            font-weight: 800;
+            opacity: 0.5;
             font-size: 0.725em;
+        }
+
+        h2 {
+            color: #514f54;
         }
     }
 }

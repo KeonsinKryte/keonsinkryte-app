@@ -12,7 +12,7 @@ class CognosisThumbnail extends Component {
                     </div>
                 </Link>
                 <div className="cognosis__information">
-                    <div className="cognosis__decoration"></div>
+                    <div className="cognosis__decoration">😷</div>
                     <div className="cognosis__text">
                         <h2>Improving efficency on neurological tests in patients with Parkinson's disease</h2>
                         <p>Cognosis™ | 2019 - 2020</p>

@@ -1,5 +1,5 @@
 .nav {
-  height: 8.5vh;
+  height: 10vh;
   width: 100%;
   max-width: 100vh;
   display: flex;
@@ -21,6 +21,17 @@
     width: 50%;
     height: auto;
     float: left;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+      font-family: $main-font, sans-serif;
+      font-weight: 200;
+      color: $main-color;
+    }
   }
 
   &__right {

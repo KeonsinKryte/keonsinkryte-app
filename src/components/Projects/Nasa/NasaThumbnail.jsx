@@ -12,9 +12,9 @@ class NasaThumbnail extends Component {
                     </div>
                 </Link>
                 <div className="nasa__information">
-                    <div className="nasa__decoration"></div>
+                    <div className="nasa__decoration">📚</div>
                     <div className="nasa__text">
-                        <h2>Yu´a Atsa Piya´a <br /> The preservation of a indigenous language</h2>
+                        <h2>Yu´a Atsa Piya´a <br /> The preservation of an indigenous language</h2>
                         <p>Yu´a Atsa Piya´a | 2017</p>
                     </div>
                 </div>
