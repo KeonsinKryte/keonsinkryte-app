@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { ConnectedRouter } from 'react-router-redux';
 
 import Cover from '../Cover/Cover';
 import Header from '../Header/Header';
@@ -9,6 +10,14 @@ import Viewer from '../Projects/Viewer/Viewer';
 import Cognosis from '../Projects/Cognosis/Cognosis';
 import Duino from '../Projects/Duino/Duino';
 import Nasa from '../Projects/Nasa/Nasa';
+
+import createHistory from "history/createBrowserHistory"
+
+export const history = createHistory()
+
+history.listen((location, action) => {
+    window.scrollTo(0, 0)
+})
 
 class App extends Component {
     render() {

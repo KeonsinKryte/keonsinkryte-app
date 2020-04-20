@@ -3,6 +3,8 @@
 $main-color: rgb(0, 84, 255) !global;
 $main-color-alpha: #0054ff75 !global;
 $main-font: "Inter" !global;
+$secondary-color: rgb(81, 79, 84) !global;
+$secondary-color-alpha: #514f5450 !global;
 
 @import "./components/Cover/cover";
 @import "./components/Header/header";
@@ -20,22 +22,24 @@ body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-
-  a {
-    text-decoration: none;
-  }
+  transition: ease 0.5s;
 }
 
 .app {
   width: 100%;
   max-width: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: csenter;
   align-items: center;
   flex-flow: column;
 
   margin: auto;
   background-color: white;
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
 
   &__container {
     width: 100%;
@@ -68,6 +72,213 @@ h4 {
   font-family: $main-font, sans-serif;
   font-weight: 400;
   font-size: 0.725em;
+}
+
+h5 {
+  color: $secondary-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.heading_1 {
+  color: $secondary-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.heading_2 {
+  color: $secondary-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin-top: 0.5vh;
+  padding: 0;
+}
+
+.paragraph_1 {
+  color: $secondary-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.heading_list {
+  color: $secondary-color;
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.paragraph_list {
+  text-align: center;
+  color: $secondary-color-alpha;
+  font-family: $main-font, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+}
+
+.text {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 35vw;
+    margin: auto;
+  }
+
+  &-centered {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.half-container {
+  display: flex;
+  width: 100%;
+
+  .left {
+    left: 0;
+    width: 50%;
+    padding-left: 2.5vh;
+  }
+
+  .right {
+    right: 0;
+    width: 50%;
+    padding-right: 2.5vh;
+  }
+}
+
+.mostly-container {
+  display: flex;
+  width: 100%;
+
+  .left {
+    left: 0;
+    width: 20%;
+    padding-left: 2.5vh;
+  }
+
+  .right {
+    right: 0;
+    width: 80%;
+    padding-right: 2.5vh;
+  }
+}
+
+.wide-90 {
+  width: 90%;
+}
+
+.sca-75 {
+  color: #514f5480;
+}
+
+.spacing {
+  &-5vh {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    &-top {
+      margin-top: 5vh;
+    }
+
+    &-bottom {
+      margin-bottom: 5vh;
+    }
+  }
+
+  &-7.5vh {
+    margin-top: 7.55vh;
+    margin-bottom: 7.5vh;
+    &-top {
+      margin-top: 7.5vh;
+    }
+
+    &-bottom {
+      margin-bottom: 7.5vh;
+    }
+  }
+
+  &-10vh {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    &-top {
+      margin-top: 10vh;
+    }
+
+    &-bottom {
+      margin-bottom: 10vh;
+    }
+  }
+}
+
+.line {
+  &-a {
+    height: 0.15vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(255, 84, 89, 1) 50%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  &-b {
+    height: 0.15vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(255, 165, 10, 1) 50%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  &-c {
+    height: 0.15vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(155, 215, 26, 1) 50%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  &-d {
+    height: 0.15vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(0, 188, 209, 1) 50%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ::-webkit-scrollbar {
