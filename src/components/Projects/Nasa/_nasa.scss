@@ -22,6 +22,20 @@
             margin-bottom: 5vh;
         }
 
+        &-challenge {
+            background-position: 35%;
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-image: url("/images/projects/common/project_challenge.png");
+        }
+
+        &-approach {
+            background-position: 35% 0;
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-image: url("/images/projects/common/project_approach.png");
+        }
+
         &-info {
             display: flex;
             flex-direction: column;
@@ -91,6 +105,9 @@
                 height: 50vh;
                 display: flex;
                 flex-direction: row;
+                background-position: center;
+                background-size: cover;
+                background-image: url("/images/projects/nasa/project/nasa_project_pattern.png");
                 background-color: white;
             }
         }
@@ -120,25 +137,6 @@
         }
 
         &-develop {
-            img {
-                width: 50%;
-                height: auto;
-            }
-            &-roller {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                img {
-                    width: 30%;
-                }
-                div {
-                    width: 30%;
-                    background-size: cover;
-                    background-position: left;
-                    filter: grayscale(100%);
-                    background-image: url("/images/projects/nasa/project/nasa_project_workshop.png");
-                }
-            }
         }
 
         &-deliver {

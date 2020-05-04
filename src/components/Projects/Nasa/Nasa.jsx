@@ -26,7 +26,7 @@ class Nasa extends Component {
                         </div>
                     </div>
                     <div className="text-container text-centered">
-                        <p className="paragraph_1">
+                        <p className="paragraph_1 spacing-10vh-top">
                             <strong>Yu´ a Atsa Piya ´a</strong>, was a tool/game created for the Nasa indigenous community located in La Primavera, Cauca. This platform works as an interactive method for learning Nasa Yuwe (Native Indigenous language of Nasa’s community) in kids.
                         </p>
                     </div>
@@ -60,10 +60,10 @@ class Nasa extends Component {
                     </p>
                     </div>
                     <article className="nasa__project-discover">
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_diamond-diagram.png"} alt="Double Diamond diagram" />
                         <div className="text-container text-centered column spacing-5vh">
-                            <img className="nasa__project-diagram" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_diamond-diagram.png"} alt="Double Diamond diagram" />
                             <div className="line-a"></div>
-                            <p className="heading_list">Discover</p>
+                            <p className="heading_list">Discover<br /><span>🔎</span></p>
                             <p className="paragraph_1">
                                 The first step here was defining What?, Why? and Where?. Three “simple questions” that gonna guide us into the real user, context and purpose.
                             </p>
@@ -83,7 +83,7 @@ class Nasa extends Component {
                             <img src="" alt="" />
                             <div className="nasa__project-info c spacing-5vh">
                                 <h2>Where?</h2>
-                                <p className="paragraph_list sca-75">There’s no better way to understand the people you’re designing for than by immersing yourself into their lives and communities. <br /><p></p><br /> For context, it’s 2017, one year after <strong><a href="https://www.nytimes.com/2016/09/27/world/americas/colombia-farc-peace-agreement.html" target="blank">the final agreement to end the armed conflict in Colombia</a></strong>.<br /><p></p><br />Cauca is one of the most affected regions by this conflict. Over 40 years of resistance by the Nasa community in its territories have delayed this communities to access new technologies and literacy tools.
+                                <p className="paragraph_list sca-75">There’s no better way to understand the people you’re designing for than by immersing yourself into their lives and communities. <br /><p></p><br /> To give you some context, it’s 2017, one year after <strong><a href="https://www.nytimes.com/2016/09/27/world/americas/colombia-farc-peace-agreement.html" target="blank">the final agreement to end the armed conflict in Colombia</a></strong>.<br /><p></p><br />Cauca is one of the most affected regions by this conflict. Over 40 years of resistance by the Nasa community in its territories have delayed this communities to access new technologies and literacy tools.
                                 </p>
                             </div>
                         </div>
@@ -91,16 +91,11 @@ class Nasa extends Component {
                     <article className="nasa__project-define">
                         <div className="text-container spacing-5vh text-centered column">
                             <div className="line-b"></div>
-                            <p className="heading_list">Define</p>
+                            <p className="heading_list">Define<br /><span>🗳️</span></p>
                             <p className="paragraph_1">
-                                We can imagine the language learning as a possibility to engage a strong methodology based on didactic elements, but the challenge suggest use the technology as an instrument of digital literacy in kids. So the mainly instrument for this metaphor would be the screen.
+                                We can imagine the language learning as a possibility to engage a strong methodology based on didactic elements, but the challenge suggest use the technology as an instrument of digital literacy in kids. So the mainly instrument for this metaphor would be the screen. <br /> <br />
+                                After a big research we can define our goals in four main insights.
                         </p>
-                        </div>
-                    </article>
-                    <article className="nasa__project-develop">
-                        <div className="text-container spacing-5bh text-centered column">
-                            <div className="line-c"></div>
-                            <p className="heading_list">Develop</p>
                         </div>
                         <div className="mostly-container spacing-5vh-bottom">
                             <p className="heading_1 left text-centered">1</p>
@@ -109,11 +104,6 @@ class Nasa extends Component {
                                 <p className="paragraph_1 right">
                                     The product needs to follow the colors, the language, the social hierarchy, the rules and the meaning of the community.
                                 </p>
-                                <div className="nasa__project-develop-roller">
-                                    <img src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_artboard-1.png"} alt="" />
-                                    <div></div>
-                                    <img src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_artboard-2.png"} alt="" />
-                                </div>
                             </div>
                         </div>
                         <div className="mostly-container spacing-5vh-bottom">
@@ -132,7 +122,6 @@ class Nasa extends Component {
                                 <p className="paragraph_1 right">
                                     The focal point, the most reliable interaction; master and pupil. Here the student has a familiar experience, being guide by someone who really knows who you are. This is a powerful metaphor, connect the digital world with the kids reality itself. It’s really gorgeous see how the kids look at his teacher in a tiny computer, they smile, they laugh, they enjoy interact with something familiar, something that really exists.
                                 </p>
-                                <img className="nasa__project-develop-img" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_teacher.png"} alt="" />
                             </div>
                         </div>
                         <div className="mostly-container spacing-5vh-bottom">
@@ -145,13 +134,80 @@ class Nasa extends Component {
                             </div>
                         </div>
                     </article>
+                    <article className="nasa__project-develop">
+                        <div className="text-container spacing-5vh text-centered column">
+                            <div className="line-c"></div>
+                            <p className="heading_list">Develop<br /><span>👩‍💻</span></p>
+                        </div>
+                        <div className="text-container text-centered column">
+                            <p className="paragraph_1">
+                                The creation of cultural product has to accomplish many aspects, and with the definition of what we need to do, it’s time to make it real.
+                            </p>
+                            <p className="paragraph_1">
+                                We decided to create minigames about the core elements we found in the previous stage, such like: Colors, fruits and food, Roles in the community and finally, the foundation myth.
+                            </p>
+                        </div>
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_difficulty.png"} alt="" />
+                        <div className="text-container text-centered column">
+                            <p className="paragraph_1">
+                                We defined an organic growth the games, a learning curve from the most basic expressions to more complex sentences and  meaning.
+                            </p>
+                            <p className="paragraph_1"><strong>So, my work intensifies here.</strong></p>
+                            <p className="paragraph_1">There were weeks where learning new words was daily, staying in touch with the teacher, asking about every step forward I take, being careful and not making any mistakes that can offend the community.</p>
+                        </div>
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_words.png"} alt="" />
+                        <div className="text-container text-centered column">
+                            <p className="paragraph_1">
+                                I created a list of words and a bunch of wireframes trying to create each interaction with the level that it needs.
+                            </p>
+                        </div>
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_wireframes.png"} alt="" />
+                        <div className="text-container text-centered column">
+                            <p className="paragraph_1">
+                                After defining every single word, every single term, every single story that we wanted to share, was possible creating the art for the game.
+                            </p>
+                            <p className="paragraph_1">
+                                One of the most important activities that we made in field was draw with the kids, we wanted to get how the identify themselves, how they see each other, how they draw their house, the colors they use and every single aspect that we can find to elaborate and create something that really represents the community.
+                            </p>
+                        </div>
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_draws.png"} alt="" />
+                    </article>
                 </article>
                 <article className="nasa__project-deliver">
-                    <div className="text-container spacing-5bh text-centered column">
+                    <div className="text-container spacing-5vh text-centered column">
                         <div className="line-d"></div>
-                        <p className="heading_list">Deliver</p>
+                        <p className="heading_list">Deliver<br /><span>📬</span></p>
+                    </div>
+                    <div className="text-container text-centered column">
+                        <p className="paragraph_1">
+                            After a huge effort we get what we want to create, now was time to develop an easy and lite program that a toaster can run … Well, this wasn’t that easy at all.
+                        </p>
+
                     </div>
                     <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_laptop-interface.png"} alt="" />
+                    <div className="text-container text-centered column spacing-5vh">
+                        <p className="paragraph_1">
+                            We created the software and after all, we deliver a version that we were proud of. We went again to La primavera, but … nothing works properly.
+                        </p>
+                    </div>
+                    <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_school.jpg"} alt="" />
+                    <div className="half-container spacing-5vh">
+                        <div className="left text-container text-centered">
+                            <p className="paragraph_1 wide-90">
+                                The computers needed the newest version of Java; well, this is not a big problem if you have an internet connection … but this time we were in the middle of a mountain, internet it’s not a possibility.
+                            </p>
+                        </div>
+                        <div className="right text-container text-centered">
+                            <p className="paragraph_1 wide-90">
+                                Computers having a lot of errors due connection issues, architecture of software incompatibilities an God knows a lot of other little issues.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="left text-container text-centered">
+                        <p className="paragraph_1">
+                            Fortunate, after many hours we can ran the software and the kids were pretty happy about it.
+                        </p>
+                    </div>
                 </article>
                 <article className="nasa__project-learning">
                     <p>

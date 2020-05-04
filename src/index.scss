@@ -175,8 +175,10 @@ h5 {
   }
 }
 
-.wide-90 {
-  width: 90%;
+.wide {
+  &-90 {
+    width: 90%;
+  }
 }
 
 .sca-75 {
@@ -197,7 +199,7 @@ h5 {
   }
 
   &-7.5vh {
-    margin-top: 7.55vh;
+    margin-top: 7.5vh;
     margin-bottom: 7.5vh;
     &-top {
       margin-top: 7.5vh;
@@ -279,6 +281,14 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.img-centered {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;
 }
 
 ::-webkit-scrollbar {
