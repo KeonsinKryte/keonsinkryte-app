@@ -179,6 +179,9 @@ h5 {
   &-90 {
     width: 90%;
   }
+  &-75 {
+    width: 75%;
+  }
 }
 
 .sca-75 {
@@ -186,6 +189,10 @@ h5 {
 }
 
 .spacing {
+  &-none {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   &-5vh {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -195,6 +202,14 @@ h5 {
 
     &-bottom {
       margin-bottom: 5vh;
+    }
+
+    &-left {
+      margin-left: 5vh;
+    }
+
+    &-right {
+      margin-right: 5vh;
     }
   }
 
@@ -283,12 +298,30 @@ h5 {
   justify-content: space-between;
 }
 
-.img-centered {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  margin: auto;
+.img {
+  &-centered {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  &-left {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    left: 0;
+    margin: auto;
+  }
+
+  &-right {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    right: 0;
+    margin: autos;
+  }
 }
 
 ::-webkit-scrollbar {

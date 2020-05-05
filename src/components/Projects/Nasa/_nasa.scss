@@ -149,6 +149,14 @@
                 bottom: 0;
             }
         }
+
+        &-greeting {
+            height: 40vh;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/images/projects/nasa/project/nasa_project_greeting.png");
+        }
     }
 
     &__cover {

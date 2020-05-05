@@ -209,16 +209,36 @@ class Nasa extends Component {
                         </p>
                     </div>
                 </article>
-                <article className="nasa__project-learning">
-                    <p>
-                        What I learned?: There’s something special when you work for a community. The kids enjoying something that you’ve created for them, the gratitude that we received and the satisfaction for creating a tool for learning an essential cultural topic.
-
-                        One of the greatest lessons I learned through this project, was the ability to get insights from an unknown culture, everything was new for me; the language, the meaning of nature, the relationship with the soil, the social hierarchy and the resilience of whole community.
-
-                        Another great lesson was the ability to create from the inevitable “clash of cultures” between two different world interpretations.
-
-                        It’s important to understand your user and provide them with tools that mold into the cultural stamp and do not allow our cosmology prevail over theirs.
-                    </p>
+                <article className="nasa__project-learning spacing-10vh">
+                    <div className="half-container">
+                        <div className="left">
+                            <p className="heading_1">So, <br /> What I learned? <br /> <span>🤔</span></p>
+                        </div>
+                        <div className="right">
+                            <p className="paragraph_1">
+                                There’s something special when you work for a community. The kids enjoying something that you’ve created for them, the gratitude that we received and the satisfaction for creating a tool for learning an essential cultural topic.
+                                <br />
+                                <br />
+                                One of the greatest lessons I learned through this project, was the ability to get insights from an unknown culture, everything was new for me; the language, the meaning of nature, the relationship with the soil, the social hierarchy and the resilience of a whole community.
+                                <br />
+                                <br />
+                                Another great lesson was the ability to create from the inevitable “clash of cultures” between two different world interpretations.
+                                <br />
+                                <br />
+                                It’s important to understand your user and provide them with tools that mold into the cultural stamp and do not allow our cosmology prevail over theirs.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article className="nasa__project-greeting spacing-10vh-bottom">
+                    <div className="text-container text-centered column">
+                        <p className="heading_1 spacing-none">
+                            That's all folks!
+                        </p>
+                        <p className="paragraph_1">
+                            Thanks for being here with me, <br /> I appreciate it. <span>😊</span>
+                        </p>
+                    </div>
                 </article>
                 <footer></footer>
             </main>
