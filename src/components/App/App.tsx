@@ -20,6 +20,9 @@ history.listen((location, action) => {
 })
 
 class App extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <Router>

@@ -48,6 +48,19 @@
         right: 0;
       }
 
+      .lab{
+        margin: auto auto auto auto;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 5vh;
+        height: auto;
+        opacity: 0.5;
+      }
+
       img {
         margin: auto auto auto auto;
         bottom: 0;
@@ -155,7 +168,10 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url("/images/projects/nasa/project/nasa_project_greeting.png");
+      background-image: url("/images/projects/duino/project/duino_project_greeting.png");
+      p {
+        background: white;
+      }
     }
   }
 

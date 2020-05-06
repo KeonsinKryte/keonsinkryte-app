@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 
+import createHistory from "history/createBrowserHistory"
+
+export const history = createHistory()
+
+history.listen((location, action) => {
+    window.scrollTo(0, 0)
+})
+
 class Duino extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <main className="duino__project">
@@ -29,8 +40,9 @@ class Duino extends Component {
                     </div>
                     <div className="duino__project-info">
                         <h5>Organizations</h5>
-                        <img src={process.env.PUBLIC_URL + "/logos/crc.png"} alt="Logo del Consejo Regional Indigena del Cauca" />
-                        <img src={process.env.PUBLIC_URL + "/logos/icesi.svg"} alt="Logo de la Universidad ICESI" />
+                        <img className="lab" src={process.env.PUBLIC_URL + "/logos/418.svg"} alt="Logo of 418 Media Lab" />
+                        <img src={process.env.PUBLIC_URL + "/logos/icesi.svg"} alt="Logo of Universidad ICESI" />
+                        <img src={process.env.PUBLIC_URL + "/logos/icesi_editorial.png"} alt="Logo of Editorial ICESI" />
                     </div>
                 </nav>
                 <article className="duino__project-challenge half-container spacing-10vh">
@@ -39,7 +51,7 @@ class Duino extends Component {
                         Learning electronics it’s a very complex and quite boring activity. It’s necessary understand natural phenomena and apply math in many cases. For a kid this have to be a big nightmare. That’s why in 418 Media Lab we wanted to tackle this problem, and create a way where kids can learn electronics without dying of boredom <span>🥱</span> or exploding their minds <span>🤯</span> trying to learn how to create from scratch a lunar rover.
                     </p>
                 </article>
-                <article className="duino__project-approach spacing-10vh">
+                <article className="duino__project-approach spacing-10vh-top">
                     <div className="half-container">
                         <p className="heading_1 left">Our approach</p>
                         <div className="right">
@@ -254,6 +266,11 @@ class Duino extends Component {
                         </p>
                     </div>
                     <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_circuit.png"} alt="" />
+                    <div className="text-container text-centered column">
+                        <p className="paragraph_1">
+                            After two years of work, improvements and many prototypes this is our most recent version.
+                        </p>
+                    </div>
                 </article>
 
                 <article className="duino__project-deliver">
@@ -261,21 +278,71 @@ class Duino extends Component {
                         <div className="line-d"></div>
                         <p className="heading_list">Deliver<br /><span>📬</span></p>
                     </div>
-                    <img className="duino__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_laptop-interface.png"} alt="" />
+                    <div className="half-container">
+                        <img className="img-left left" src={process.env.PUBLIC_URL + "/images/projects/duino/thumbnail/duino_thumbnail_cover.png"} alt="" />
+                        <div className="right spacing-5vh-left wide-75 spacing-5vh-top">
+                            <p className="paragraph_1">
+                                A book full of stories, characters and quite nice people. A book full of challenging exercises. A complete kit with all the necessary to easily play and challenge yourself.
+                            </p>
+                        </div>
+                    </div>
+                    <img className="img-centered spacing-10vh column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_book-sample.png"} alt="" />
+                    <div className="half-container">
+                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_illustration.png"} alt="" />
+                        <div className="right spacing-5vh-left spacing-5vh">
+                            <p className="paragraph_1">
+                                We are very glad to collaborate with <strong><a href="https://www.instagram.com/jedidiah.home/">Jedidias Zapata</a></strong> to illustrate our story, we’ve evolutionated in many aspects such as illustration, circuits optimization, storytelling improvements and changes in the resources we need to accomplish our goal of provide a valuable and funny adventure for kids.
+                                <br />
+                                <br />
+                                Also, we’re glad to announce that we can publish “Universo de Duino” in a near future thanks to <strong><a href="https://www.icesi.edu.co/editorial/" target="blank">Editorial Icesi.</a></strong>
+                            </p>
+                        </div>
+                    </div>
                 </article>
-                <article className="duino__project-learning">
-                    <p>
-                        What I learned?: There’s something special when you work for a community. The kids enjoying something that you’ve created for them, the gratitude that we received and the satisfaction for creating a tool for learning an essential cultural topic.
+                <article className="duino__project-learning spacing-10vh">
+                    <div className="half-container">
+                        <div className="left">
+                            <p className="heading_1">So, <br /> What I learned? <br /> <span>🤔</span></p>
+                        </div>
+                        <div className="right">
+                            <p className="paragraph_1">
+                                The moment I began in this project I can’t properly imagined how big and how complex create this kind of experiences can be.
+                                <br />
+                                <br />
+                                I’ve never thought how many variables are necessary to accomplish some basic tasks or even design a pattern for a circuit (Easy if you use a regular breadboard and wire circuit).
+                                Kids.
+                                <br />
+                                <br />
+                                Trying to guess what’s inside their mind, how they think, how the learn, what they like and other kind of things that were important to develop a suitable solution.
+                                <br />
+                                <br />
+                                It’s gratifying as designers to see how our products are used, but this time it’s going to take more time that we expected. I wait that moment with so much hype.
+                            </p>
+                            <h5>Let me tell you about <a href="https://www.instagram.com/semillero418/" target="blank"><span className="heading_3">418 Media Lab ☕</span></a></h5>
+                            <p className="paragraph_1">
+                                Specially what we do.
+                                <br />
+                                <br />
+                                We’re a group of designers and artists with an special thing in common “We love electronics”. We’ve created a community that share, teach, create and solve problems based on the electronics.
+                                <br />
+                                <br />
+                                Our work is pretty diverse; from wearables solutions like <strong><a href="https://mariangelaaponte.com/portfolio/samay/" target="blank">Samay</a></strong>, a book “Universo de Duino” and, currently, we’re working on a project related to air pollution.
 
-                        One of the greatest lessons I learned through this project, was the ability to get insights from an unknown culture, everything was new for me; the language, the meaning of nature, the relationship with the soil, the social hierarchy and the resilience of whole community.
-
-                        Another great lesson was the ability to create from the inevitable “clash of cultures” between two different world interpretations.
-
-                        It’s important to understand your user and provide them with tools that mold into the cultural stamp and do not allow our cosmology prevail over theirs.
-                </p>
+                            </p>
+                        </div>
+                    </div>
                 </article>
-                <footer></footer>
-            </main>
+                <footer className="duino__project-greeting spacing-10vh-bottom">
+                    <div className="text-container text-centered column">
+                        <p className="heading_1 spacing-none">
+                            That's all folks!
+                        </p>
+                        <p className="paragraph_1">
+                            Thanks for being here with me, <br /> I appreciate it. <span>😊</span>
+                        </p>
+                    </div>
+                </footer>
+            </main >
         );
     }
 }

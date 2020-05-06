@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import createHistory from "history/createBrowserHistory"
 
@@ -13,7 +12,6 @@ class Nasa extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
-
     render() {
         return (
             <main className="nasa__project">
@@ -230,7 +228,7 @@ class Nasa extends Component {
                         </div>
                     </div>
                 </article>
-                <article className="nasa__project-greeting spacing-10vh-bottom">
+                <footer className="nasa__project-greeting spacing-10vh-bottom">
                     <div className="text-container text-centered column">
                         <p className="heading_1 spacing-none">
                             That's all folks!
@@ -239,8 +237,7 @@ class Nasa extends Component {
                             Thanks for being here with me, <br /> I appreciate it. <span>😊</span>
                         </p>
                     </div>
-                </article>
-                <footer></footer>
+                </footer>
             </main>
         );
     }
