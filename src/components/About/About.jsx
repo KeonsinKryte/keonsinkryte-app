@@ -20,12 +20,12 @@ class About extends Component {
                                 <br /><br />
                                 Three topics I suggest are pretty important for design exploration right now: <strong>Education<span role="img" aria-label="School">🏫</span>, Health <span role="img" aria-label="Doctor">👩‍⚕️</span></strong> and <strong>digital literacy<span role="img" aria-label="Floppy Disk">💾</span>.</strong>
                             <br /><br />
-                                Download my CV  <strong><a href="/cv/Resume - EN - BW.pdf" download="Resumen EN">EN</a></strong> :|:|: <strong><a href="/cv/Resume - ES - BW.pdf" download="Resumen ES">ES </a></strong>
+                                Download my CV  <strong><a href="/cv/Resume - EN - BW.pdf" download="KeonsinKryte Resume EN">EN</a></strong> :|:|: <strong><a href="/cv/Resume - ES - BW.pdf" download="KeonsinKryte Resume ES">ES </a></strong>
                         </p>
 
                     </div>
                 </div>
-                <div className="right text-right">
+                <div className="right text-right spacing-10vh-top">
                     <a onClick={() => scroll.scrollToBottom()} className="header__scroll">
                         <h2>Contact me!</h2>
                         <img className="img-tiny-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
