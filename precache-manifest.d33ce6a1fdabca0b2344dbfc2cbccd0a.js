@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac477616edddc14c5f7002c3fb29b48a",
+    "revision": "3429a193d9daa0e45a35480b4c856c90",
     "url": "/keonsinkryte-app/index.html"
   },
   {
-    "revision": "ed073f093668ee1e1cb9",
+    "revision": "049c13582ec64128112f",
     "url": "/keonsinkryte-app/static/css/main.2b185596.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/keonsinkryte-app/static/js/2.a6c3d81a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed073f093668ee1e1cb9",
-    "url": "/keonsinkryte-app/static/js/main.d8378741.chunk.js"
+    "revision": "049c13582ec64128112f",
+    "url": "/keonsinkryte-app/static/js/main.c5358f86.chunk.js"
   },
   {
     "revision": "a3dec238b477945d26c4",
