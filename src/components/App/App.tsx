@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router-dom';
 
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
@@ -15,7 +15,7 @@ import NotFound from '../NotFound/NotFound';
 class App extends Component {
     render() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={`${process.env.PUBLIC_URL}/`}>
                 <ScrollToTop></ScrollToTop>
                 <div className="app">
                     <div className="app__container">
@@ -42,7 +42,7 @@ class App extends Component {
                     </div>
                     <Footer></Footer>
                 </div>
-            </Router>
+            </HashRouter>
         );
     }
 }
