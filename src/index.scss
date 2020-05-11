@@ -57,35 +57,35 @@ h1 {
   color: $main-color;
   font-family: $main-font, sans-serif;
   font-weight: 700;
-  font-size: 5em;
+  font-size: 5vw;
 }
 
 h2 {
   color: $main-color;
   font-family: $main-font, sans-serif;
   font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1vw;
 }
 
 h3 {
   color: white;
   font-family: $main-font, sans-serif;
   font-weight: 700;
-  font-size: 1.725em;
+  font-size: 1.5vw;
 }
 
 h4 {
   color: white;
   font-family: $main-font, sans-serif;
   font-weight: 400;
-  font-size: 0.725em;
+  font-size: 0.725vw;
 }
 
 h5 {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.125vw;
   margin-bottom: 0;
 }
 
@@ -93,15 +93,15 @@ h5 {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2.25vw;
 }
 
 .heading_2 {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
   font-weight: 600;
-  font-size: 2.5em;
-  margin-top: 0.5vh;
+  font-size: 2vw;
+  margin-top: 0.5vw;
   padding: 0;
 }
 
@@ -109,7 +109,7 @@ h5 {
   color: #6ae2c6;
   font-family: $main-font, sans-serif;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 1vw;
   margin-bottom: 0;
 }
 
@@ -117,7 +117,7 @@ h5 {
   color: #ffa50a;
   font-family: $main-font, sans-serif;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 1vw;
   margin-bottom: 0;
 }
 
@@ -125,14 +125,14 @@ h5 {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.05vw;
 }
 
 .heading_list {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.75vw;
 }
 
 .paragraph_list {
@@ -140,7 +140,7 @@ h5 {
   color: $secondary-color-alpha;
   font-family: $main-font, sans-serif;
   font-weight: 400;
-  font-size: 1.125em;
+  font-size: 1vw;
 }
 
 .text {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import createHistory from "history/createBrowserHistory"
 
@@ -346,10 +347,10 @@ class Duino extends Component {
                     </div>
                 </footer>
                 <div className="right text-right spacing-10vh-bottom">
-                    <a className="header__scroll" href="/projects/nasa">
+                    <Link to="/projects/nasa">
                         <h2>Check out this education and language project<span role="img" aria-label="Books">📚</span></h2>
                         <img className="img-small-vertical-right rotated" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
-                    </a>
+                    </Link>
                 </div>
             </main >
         );
