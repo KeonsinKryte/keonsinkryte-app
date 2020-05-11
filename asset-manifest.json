@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/keonsinkryte-app/static/css/main.2b185596.chunk.css",
-    "main.js": "/keonsinkryte-app/static/js/main.c5358f86.chunk.js",
-    "main.js.map": "/keonsinkryte-app/static/js/main.c5358f86.chunk.js.map",
+    "main.js": "/keonsinkryte-app/static/js/main.9839f608.chunk.js",
+    "main.js.map": "/keonsinkryte-app/static/js/main.9839f608.chunk.js.map",
     "runtime-main.js": "/keonsinkryte-app/static/js/runtime-main.67935abd.js",
     "runtime-main.js.map": "/keonsinkryte-app/static/js/runtime-main.67935abd.js.map",
     "static/js/2.a6c3d81a.chunk.js": "/keonsinkryte-app/static/js/2.a6c3d81a.chunk.js",
     "static/js/2.a6c3d81a.chunk.js.map": "/keonsinkryte-app/static/js/2.a6c3d81a.chunk.js.map",
     "index.html": "/keonsinkryte-app/index.html",
-    "precache-manifest.d33ce6a1fdabca0b2344dbfc2cbccd0a.js": "/keonsinkryte-app/precache-manifest.d33ce6a1fdabca0b2344dbfc2cbccd0a.js",
+    "precache-manifest.9814c21e4dec51c75ee4302c15271eef.js": "/keonsinkryte-app/precache-manifest.9814c21e4dec51c75ee4302c15271eef.js",
     "service-worker.js": "/keonsinkryte-app/service-worker.js",
     "static/css/main.2b185596.chunk.css.map": "/keonsinkryte-app/static/css/main.2b185596.chunk.css.map",
     "static/js/2.a6c3d81a.chunk.js.LICENSE.txt": "/keonsinkryte-app/static/js/2.a6c3d81a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.67935abd.js",
     "static/js/2.a6c3d81a.chunk.js",
     "static/css/main.2b185596.chunk.css",
-    "static/js/main.c5358f86.chunk.js"
+    "static/js/main.9839f608.chunk.js"
   ]
 }
