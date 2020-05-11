@@ -19,7 +19,10 @@ class About extends Component {
                                 I believe in economic growth and well being as an opportunity for Design disciplines. Our responsibility it’s provide tools for social impact.
                                 <br /><br />
                                 Three topics I suggest are pretty important for design exploration right now: <strong>Education<span role="img" aria-label="School">🏫</span>, Health <span role="img" aria-label="Doctor">👩‍⚕️</span></strong> and <strong>digital literacy<span role="img" aria-label="Floppy Disk">💾</span>.</strong>
+                            <br /><br />
+                                Download my CV  <strong><a href="/cv/Resume - EN - BW.pdf" download="Resumen EN">EN</a></strong> :|:|: <strong><a href="/cv/Resume - ES - BW.pdf" download="Resumen ES">ES </a></strong>
                         </p>
+
                     </div>
                 </div>
                 <div className="right text-right">

@@ -10,6 +10,7 @@
     "@types/react-router-redux": "^5.0.18",
     "@types/react-scroll": "^1.5.4",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "mobx-react": "^6.1.8",
     "node-sass": "^4.13.1",
     "p5": "^0.10.2",
