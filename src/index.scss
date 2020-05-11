@@ -10,6 +10,8 @@ $secondary-color-alpha: #514f5450 !global;
 @import "./components/Header/header";
 @import "./components/Nav/nav";
 @import "./components/Footer/footer";
+@import "./components/About/about";
+@import "./components/NotFound/notfound";
 
 @import "./components/Projects/Viewer/viewer";
 @import "./components/Projects/Cognosis/cognosis";
@@ -43,6 +45,11 @@ body {
 
   &__container {
     width: 100%;
+  }
+
+  s {
+    color: $secondary-color;
+    opacity: 0.25;
   }
 }
 
@@ -106,6 +113,14 @@ h5 {
   margin-bottom: 0;
 }
 
+.heading_4 {
+  color: #ffa50a;
+  font-family: $main-font, sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
 .paragraph_1 {
   color: $secondary-color;
   font-family: $main-font, sans-serif;
@@ -146,6 +161,11 @@ h5 {
 
   &-right {
     text-align: right;
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
@@ -244,6 +264,18 @@ h5 {
       margin-bottom: 10vh;
     }
   }
+
+  &-20vh {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    &-top {
+      margin-top: 20vh;
+    }
+
+    &-bottom {
+      margin-bottom: 20vh;
+    }
+  }
 }
 
 .line {
@@ -306,7 +338,59 @@ h5 {
   justify-content: space-between;
 }
 
+.centered {
+  top: 0;
+  bottom: 0;
+  margin: auto auto auto auto;
+}
+
 .img {
+  &-medium {
+    &-vertical {
+      width: auto;
+      height: 50%;
+      max-height: 50%;
+    }
+  }
+
+  &-small {
+    margin: 0;
+    padding: 0;
+    &-vertical {
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      height: 25%;
+      max-height: 25%;
+      &-right {
+        right: 0;
+        padding: 0;
+        width: 25%;
+        max-width: 7.5%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  &-tiny {
+    &-vertical {
+      width: 12.5%;
+      height: 12.5%;
+      max-height: 12.5%;
+      &-right {
+        right: 0;
+        padding: 0;
+        width: 25%;
+        max-width: 3.75%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
   &-centered {
     width: 100%;
     max-width: 100%;
@@ -328,8 +412,12 @@ h5 {
     max-width: 50%;
     height: auto;
     right: 0;
-    margin: autos;
+    margin: auto;
   }
+}
+
+.rotated {
+  transform: rotate(-90deg);
 }
 
 ::-webkit-scrollbar {

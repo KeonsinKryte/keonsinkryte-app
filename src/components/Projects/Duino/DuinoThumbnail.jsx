@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class DuinoThumbnail extends Component {
     render() {
@@ -12,7 +12,7 @@ class DuinoThumbnail extends Component {
                     </div>
                 </Link>
                 <div className="duino__information">
-                    <div className="duino__decoration">👽</div>
+                    <div className="duino__decoration"><span role="img" aria-label="Alien">👽</span></div>
                     <div className="duino__text">
                         <h2>Duino, an alien who teaches electronics in kids. <br />New ways of learning</h2>
                         <p>Universo de Duino | 2017 - 2020</p>

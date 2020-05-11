@@ -6,10 +6,13 @@ export const history = createHistory()
 
 history.listen((location, action) => {
     window.scrollTo(0, 0)
-})
+});
 
 class Duino extends Component {
     componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    componentDidUpdate() {
         window.scrollTo(0, 0);
     }
     render() {
@@ -17,7 +20,7 @@ class Duino extends Component {
             <main className="duino__project">
                 <article className="duino__project-description">
                     <div className="duino__project-information-header">
-                        <div className="duino__project-decoration"><span>👽</span></div>
+                        <div className="duino__project-decoration"><span role="img" aria-label="Alien">👽</span></div>
                         <div className="duino__project-title">
                             <p className='heading_1'>Duino, an alien who teaches electronics in kids. <br />New ways of learning</p>
                             <p className="heading_2">Universo de Duino</p>
@@ -48,7 +51,7 @@ class Duino extends Component {
                 <article className="duino__project-challenge half-container spacing-10vh">
                     <p className="heading_1 left">Our Challenge</p>
                     <p className="paragraph_1 right">
-                        Learning electronics it’s a very complex and quite boring activity. It’s necessary understand natural phenomena and apply math in many cases. For a kid this have to be a big nightmare. That’s why in 418 Media Lab we wanted to tackle this problem, and create a way where kids can learn electronics without dying of boredom <span>🥱</span> or exploding their minds <span>🤯</span> trying to learn how to create from scratch a lunar rover.
+                        Learning electronics it’s a very complex and quite boring activity. It’s necessary understand natural phenomena and apply math in many cases. For a kid this have to be a big nightmare. That’s why in 418 Media Lab we wanted to tackle this problem, and create a way where kids can learn electronics without dying of boredom <span role="img" aria-label="Bored face">🥱</span> or exploding their minds <span role="img" aria-label="Exploding head">🤯</span> trying to learn how to create from scratch a lunar rover.
                     </p>
                 </article>
                 <article className="duino__project-approach spacing-10vh-top">
@@ -68,7 +71,7 @@ class Duino extends Component {
                             We got two possible answers:
                         </p>
                     </div>
-                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_approach.png"} alt="" />
+                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_approach.png"} alt="Approach" />
                     <div className="half-container">
                         <div className="left spacing-5vh-left">
                             <h5>The death of a toy.</h5>
@@ -93,7 +96,7 @@ class Duino extends Component {
                 <article className="duino__project-discover">
                     <div className="text-container text-centered column spacing-5vh">
                         <div className="line-a"></div>
-                        <p className="heading_list">Discover<br /><span>🔎</span></p>
+                        <p className="heading_list">Discover<br /><span role="img" aria-label="Magnifying glass">🔎</span></p>
                     </div>
                     <div className="text-container text-centered column">
                         <p className="paragraph_1">
@@ -131,7 +134,7 @@ class Duino extends Component {
                             This is what we find out.
                         </p>
                     </div>
-                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_books.png"} alt="" />
+                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_books.png"} alt="Different books" />
                     <div className="half-container">
                         <div className="left spacing-5vh-left">
                             <h5>
@@ -156,7 +159,7 @@ class Duino extends Component {
                 <article className="duino__project-define">
                     <div className="text-container spacing-5vh text-centered column">
                         <div className="line-b"></div>
-                        <p className="heading_list">Define<br /><span>🗳️</span></p>
+                        <p className="heading_list">Define<br /><span role="img" aria-label="Vote">🗳️</span></p>
                         <p className="paragraph_1">
                             This time defining it’s very difficult, but the insights we got were pretty helpful.
                         </p>
@@ -164,7 +167,7 @@ class Duino extends Component {
                     <div className="mostly-container spacing-5vh-bottom">
                         <p className="heading_1 left text-centered">1</p>
                         <div className="text-container">
-                            <h5>Creating engagement in kids.<span>😜</span></h5>
+                            <h5>Creating engagement in kids.<span role="img" aria-label="Winking face">😜</span></h5>
                             <p className="paragraph_1 right">
                                 Being an adult and trying to make a kid enjoy the things you like it’s … you know, the perfect moment for a kid to say “Ok, boomer”. This is bigger than making colorful cartoons or talking with baby voice because they’re not dumb, instead they’re pretty brilliant!
                             </p>
@@ -173,7 +176,7 @@ class Duino extends Component {
                     <div className="mostly-container spacing-5vh-bottom">
                         <p className="heading_1 left text-centered">2</p>
                         <div className="text-container">
-                            <h5>Keep it simple, stupid. <span>🤦‍♀️</span></h5>
+                            <h5>Keep it simple, stupid. <span role="img" aria-label="Slap face">🤦‍♀️</span></h5>
                             <p className="paragraph_1 right">
                                 Keeping the essentials, but not saturate with non-necessary information (at this level). A kid needs to know how the energy flows, but it’s not necessary know how to apply the Ohm’s law.
                             </p>
@@ -182,7 +185,7 @@ class Duino extends Component {
                     <div className="mostly-container spacing-5vh-bottom">
                         <p className="heading_1 left text-centered">3</p>
                         <div className="text-container">
-                            <h5>It’s not just about electronics.📺<span></span></h5>
+                            <h5>It’s not just about electronics.<span role="img" aria-label="TV">📺</span></h5>
                             <p className="paragraph_1 right">
                                 This what we’re looking for solutions. Kids doesn’t want something only about electronics, they need something else, something that matters for them.
                             </p>
@@ -191,7 +194,7 @@ class Duino extends Component {
                     <div className="mostly-container spacing-5vh-bottom">
                         <p className="heading_1 left text-centered">4</p>
                         <div className="text-container">
-                            <h5>Learning to create.<span>🖍️</span></h5>
+                            <h5>Learning to create.<span role="img" aria-label="Crayon">🖍️</span></h5>
                             <p className="paragraph_1 right">
                                 One important aspect is that a kid after learning about electronics can easily create and use that information to produce whatever they want to.
                             </p>
@@ -201,7 +204,7 @@ class Duino extends Component {
                 <article className="duino__project-develop">
                     <div className="text-container spacing-5vh text-centered column">
                         <div className="line-c"></div>
-                        <p className="heading_list">Develop<br /><span>👩‍💻</span></p>
+                        <p className="heading_list">Develop<br /><span role="img" aria-label="Developer">👩‍💻</span></p>
                         <p className="paragraph_1">
                             Ideas, and ideas, testing, sharing and improving what we discuss.
                         </p>
@@ -224,19 +227,19 @@ class Duino extends Component {
                         </p>
                     </div>
                     <div className="half-container">
-                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_story.png"} alt="" />
+                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_story.png"} alt="The story segment" />
                         <div className="right spacing-5vh-left duino__project-develop-story">
                             <h5>The story and the purpose. <br /> What we want to tell. <br /> What's around the book.</h5>
                             <p className="paragraph_1">
                                 For us was very easy to put things together, specially around the topic.
                                 <br />
                                 <br />
-                                Yeah! Aliens <span>👽</span>, space <span>👩‍🚀</span>, technology <span>⚙️</span>, friendship <span>🤝</span> and even an evil character <span>🦹‍♀️</span>; The old wiser one <span>👴</span>.
+                                Yeah! Aliens <span role="img" aria-label="Alien">👽</span>, space <span role="img" aria-label="Astronaut">👩‍🚀</span>, technology <span role="img" aria-label="Gear">⚙️</span>, friendship <span role="img" aria-label="Handshake">🤝</span> and even an evil character <span role="img" aria-label="Evil woman">🦹‍♀️</span>; The old wiser one <span role="img" aria-label="Old man">👴</span>.
                                 <br />
                                 <br />
                                 The ingredients of a fantastic story, buuut we can’t have an adventure without you (I mean, the kid). So, put your boots on, wash your hands <i>(Yeah, this was written in Covid times)</i> and let’s begin!
                             </p>
-                            <img className="img-centered" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_story-bg.png"} alt="" />
+                            <img className="img-centered" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_story-bg.png"} alt="Fellas sharing time together" />
                         </div>
                     </div>
                     <div className="half-container">
@@ -246,10 +249,10 @@ class Duino extends Component {
                                 It wasn’t that easy to built the story, this was a tough section because we had to make a strong effort in simplifying electronic concepts and embed them into the narrative in a seamless way.
                             </p>
                         </div>
-                        <img className="img-right" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_knowledge.png"} alt="" />
+                        <img className="img-right" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_knowledge.png"} alt="The knowledge segment" />
                     </div>
                     <div className="half-container">
-                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_challenge.png"} alt="" />
+                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_challenge.png"} alt="The challenge segment" />
                         <div className="right spacing-5vh-left">
                             <h5>The challenge.<br /> How we going to evaluate what we teach. <br /> Circuits on paper.</h5>
                             <p className="paragraph_1">
@@ -265,7 +268,7 @@ class Duino extends Component {
                             We decided to give enough quantity of levels to supply an interesting story, an easy learning curve and complex circuits with deeper outcomes (Like Sound, Music, Microcontrollers, etc).
                         </p>
                     </div>
-                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_circuit.png"} alt="" />
+                    <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_circuit.png"} alt="Circuits evolution based on complexity" />
                     <div className="text-container text-centered column">
                         <p className="paragraph_1">
                             After two years of work, improvements and many prototypes this is our most recent version.
@@ -276,19 +279,19 @@ class Duino extends Component {
                 <article className="duino__project-deliver">
                     <div className="text-container spacing-5vh text-centered column">
                         <div className="line-d"></div>
-                        <p className="heading_list">Deliver<br /><span>📬</span></p>
+                        <p className="heading_list">Deliver<br /><span role="img" aria-label="Mail-box">📬</span></p>
                     </div>
                     <div className="half-container">
-                        <img className="img-left left" src={process.env.PUBLIC_URL + "/images/projects/duino/thumbnail/duino_thumbnail_cover.png"} alt="" />
+                        <img className="img-left left" src={process.env.PUBLIC_URL + "/images/projects/duino/thumbnail/duino_thumbnail_cover.png"} alt="Duino Book cover" />
                         <div className="right spacing-5vh-left wide-75 spacing-5vh-top">
-                            <p className="paragraph_1">
+                            <p className="paragraph_1 centered">
                                 A book full of stories, characters and quite nice people. A book full of challenging exercises. A complete kit with all the necessary to easily play and challenge yourself.
                             </p>
                         </div>
                     </div>
-                    <img className="img-centered spacing-10vh column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_book-sample.png"} alt="" />
+                    <img className="img-centered spacing-10vh column" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_book-sample.png"} alt="Book with circuits working" />
                     <div className="half-container">
-                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_illustration.png"} alt="" />
+                        <img className="img-left" src={process.env.PUBLIC_URL + "/images/projects/duino/project/duino_project_illustration.png"} alt="People celebrating" />
                         <div className="right spacing-5vh-left spacing-5vh">
                             <p className="paragraph_1">
                                 We are very glad to collaborate with <strong><a href="https://www.instagram.com/jedidiah.home/">Jedidias Zapata</a></strong> to illustrate our story, we’ve evolutionated in many aspects such as illustration, circuits optimization, storytelling improvements and changes in the resources we need to accomplish our goal of provide a valuable and funny adventure for kids.
@@ -302,7 +305,7 @@ class Duino extends Component {
                 <article className="duino__project-learning spacing-10vh">
                     <div className="half-container">
                         <div className="left">
-                            <p className="heading_1">So, <br /> What I learned? <br /> <span>🤔</span></p>
+                            <p className="heading_1">So, <br /> What I learned? <br /> <span role="img" aria-label="Thinking face">🤔</span></p>
                         </div>
                         <div className="right">
                             <p className="paragraph_1">
@@ -318,7 +321,7 @@ class Duino extends Component {
                                 <br />
                                 It’s gratifying as designers to see how our products are used, but this time it’s going to take more time that we expected. I wait that moment with so much hype.
                             </p>
-                            <h5>Let me tell you about <a href="https://www.instagram.com/semillero418/" target="blank"><span className="heading_3">418 Media Lab ☕</span></a></h5>
+                            <h5>Let me tell you about <a href="https://www.instagram.com/semillero418/" target="blank"><br /><span className="heading_3" role="img" aria-label="Coffe mug">418 Media Lab ☕</span></a></h5>
                             <p className="paragraph_1">
                                 Specially what we do.
                                 <br />
@@ -338,10 +341,16 @@ class Duino extends Component {
                             That's all folks!
                         </p>
                         <p className="paragraph_1">
-                            Thanks for being here with me, <br /> I appreciate it. <span>😊</span>
+                            Thanks for being here with me, <br /> I appreciate it. <span role="img" aria-label="Happy face">😊</span>
                         </p>
                     </div>
                 </footer>
+                <div className="right text-right spacing-10vh-bottom">
+                    <a className="header__scroll" href="/projects/nasa">
+                        <h2>Check out this education and language project<span role="img" aria-label="Books">📚</span></h2>
+                        <img className="img-small-vertical-right rotated" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
+                    </a>
+                </div>
             </main >
         );
     }

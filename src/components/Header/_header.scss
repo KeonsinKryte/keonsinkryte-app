@@ -5,6 +5,13 @@
   margin: auto;
   margin-top: 7vh;
 
+  &__scroll {
+    scroll-behavior: smooth;
+    transition: ease 3s;
+    cursor: pointer;
+
+  }
+
   &__left {
     width: 50%;
     background: white;
@@ -13,6 +20,9 @@
   &__right {
     width: 50%;
     float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 

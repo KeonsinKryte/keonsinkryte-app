@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Events, animateScroll as scroll, scroller } from 'react-scroll'
 
 class Nav extends Component {
+    componentDidMount() {
+        Events.scrollEvent.register('begin', function () {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function () {
+            console.log("end", arguments);
+        });
+    }
+
+    scrollTo() {
+        scroller.scrollTo('scroll-to-element', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+        })
+    }
     render() {
         return (
             <nav className="nav">
                 <div className="nav__container">
                     <article className="nav__left">
-                        <Link to="/">
+                        <Link to="/" onClick={() => scroll.scrollTo(0)}>
                             <h2>Mauricio Botero Vallejo</h2>
                             <p>UX Researcher & Design Strategist</p>
                         </Link>

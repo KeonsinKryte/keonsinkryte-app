@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
 import Cover from '../Cover/Cover';
+import { Events, animateScroll as scroll, scroller } from 'react-scroll'
 
 class Header extends Component {
+    componentDidMount() {
+        Events.scrollEvent.register('begin', function () {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function () {
+            console.log("end", arguments);
+        });
+    }
+
+    scrollTo() {
+        scroller.scrollTo('scroll-to-element', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+        })
+    }
     render() {
         return (
             <header className="header">
@@ -33,6 +51,12 @@ class Header extends Component {
                 <article className="header__right">
                     <div className="right__content">
                         <Cover></Cover>
+                    </div>
+                    <div className="right text-right">
+                        <a onClick={() => scroll.scrollTo(1075)} className="header__scroll">
+                            <h2>Check out my work!</h2>
+                            <img className="img-small-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
+                        </a>
                     </div>
                 </article>
             </header>

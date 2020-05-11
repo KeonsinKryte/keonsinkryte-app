@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class CognosisThumbnail extends Component {
     render() {
@@ -12,9 +12,9 @@ class CognosisThumbnail extends Component {
                     </div>
                 </Link>
                 <div className="cognosis__information">
-                    <div className="cognosis__decoration">😷</div>
+                    <div className="cognosis__decoration"><span role="img" aria-label="Brain">🧠</span></div>
                     <div className="cognosis__text">
-                        <h2>Improving efficency on neurological tests in patients with Parkinson's disease</h2>
+                        <h2>Improving efficiency on neurological tests in Parkinson's disease patients</h2>
                         <p>Cognosis™ | 2019 - 2020</p>
                     </div>
                 </div>

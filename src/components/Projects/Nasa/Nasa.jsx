@@ -12,12 +12,15 @@ class Nasa extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
+    componentDidUpdate() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <main className="nasa__project">
                 <article className="nasa__project-description">
                     <div className="nasa__project-information-header">
-                        <div className="nasa__project-decoration">📚</div>
+                        <div className="nasa__project-decoration"><span role="img" aria-label="Books">📚</span></div>
                         <div className="nasa__project-title">
                             <p className='heading_1'>The preservation of an indigenous language</p>
                             <p className="heading_2">Yu´a Atsa Piya´a</p>
@@ -40,8 +43,8 @@ class Nasa extends Component {
                     </div>
                     <div className="nasa__project-info">
                         <h5>Organizations</h5>
-                        <img src={process.env.PUBLIC_URL + "/logos/crc.png"} alt="Logo del Consejo Regional Indigena del Cauca" />
-                        <img src={process.env.PUBLIC_URL + "/logos/icesi.svg"} alt="Logo de la Universidad ICESI" />
+                        <img src={process.env.PUBLIC_URL + "/logos/crc.png"} alt="Logo of Consejo Regional Indigena del Cauca" />
+                        <img src={process.env.PUBLIC_URL + "/logos/icesi.svg"} alt="Logo of Universidad ICESI" />
                     </div>
                 </nav>
                 <article className="nasa__project-challenge half-container spacing-10vh">
@@ -58,10 +61,10 @@ class Nasa extends Component {
                     </p>
                     </div>
                     <article className="nasa__project-discover">
-                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_diamond-diagram.png"} alt="Double Diamond diagram" />
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/common/project_diamond-diagram.png"} alt="Double Diamond diagram" />
                         <div className="text-container text-centered column spacing-5vh">
                             <div className="line-a"></div>
-                            <p className="heading_list">Discover<br /><span>🔎</span></p>
+                            <p className="heading_list">Discover<br /><span role="img" aria-label="magnifying glass">🔎</span></p>
                             <p className="paragraph_1">
                                 The first step here was defining What?, Why? and Where?. Three “simple questions” that gonna guide us into the real user, context and purpose.
                             </p>
@@ -89,7 +92,7 @@ class Nasa extends Component {
                     <article className="nasa__project-define">
                         <div className="text-container spacing-5vh text-centered column">
                             <div className="line-b"></div>
-                            <p className="heading_list">Define<br /><span>🗳️</span></p>
+                            <p className="heading_list">Define<br /><span role="img" aria-label="vote">🗳️</span></p>
                             <p className="paragraph_1">
                                 We can imagine the language learning as a possibility to engage a strong methodology based on didactic elements, but the challenge suggest use the technology as an instrument of digital literacy in kids. So the mainly instrument for this metaphor would be the screen. <br /> <br />
                                 After a big research we can define our goals in four main insights.
@@ -98,7 +101,7 @@ class Nasa extends Component {
                         <div className="mostly-container spacing-5vh-bottom">
                             <p className="heading_1 left text-centered">1</p>
                             <div className="text-container">
-                                <h5>The cultural representation.🌄</h5>
+                                <h5>The cultural representation.<span role="img" aria-label="Mountains">🌄</span></h5>
                                 <p className="paragraph_1 right">
                                     The product needs to follow the colors, the language, the social hierarchy, the rules and the meaning of the community.
                                 </p>
@@ -107,7 +110,7 @@ class Nasa extends Component {
                         <div className="mostly-container spacing-5vh-bottom">
                             <p className="heading_1 left text-centered">2</p>
                             <div className="text-container">
-                                <h5>Creating literacy tools rather than complex products.😵</h5>
+                                <h5>Creating literacy tools rather than complex products.<span role="img" aria-label="Dizzy face">😵</span></h5>
                                 <p className="paragraph_1 right">
                                     This is the core of the project. It’s very important that kids can improve organically from the bottom; learning and practicing the Nasa Yuwe language foundations (Food, colors and animals) and easily jump to complex interactions (Recognizing roles and social hierarchy).
                                 </p>
@@ -116,7 +119,7 @@ class Nasa extends Component {
                         <div className="mostly-container spacing-5vh-bottom">
                             <p className="heading_1 left text-centered">3</p>
                             <div className="text-container">
-                                <h5>The teacher as a guide for the student.👩‍🏫</h5>
+                                <h5>The teacher as a guide for the student.<span role="img" aria-label="Teacher">👩‍🏫</span></h5>
                                 <p className="paragraph_1 right">
                                     The focal point, the most reliable interaction; master and pupil. Here the student has a familiar experience, being guide by someone who really knows who you are. This is a powerful metaphor, connect the digital world with the kids reality itself. It’s really gorgeous see how the kids look at his teacher in a tiny computer, they smile, they laugh, they enjoy interact with something familiar, something that really exists.
                                 </p>
@@ -125,7 +128,7 @@ class Nasa extends Component {
                         <div className="mostly-container spacing-5vh-bottom">
                             <p className="heading_1 left text-centered">4</p>
                             <div className="text-container">
-                                <h5>The fun factor.💃🎉</h5>
+                                <h5>The fun factor.<span role="img" aria-label="Party">💃🎉</span></h5>
                                 <p className="paragraph_1 right">
                                     We’re talking about kids, we need to think in ways to create engagement. Learning through play it’s one of the best strategies for educational activities. Offering minigames about the animals, the colors, the food, foundation stories, myths, legends and the sense of community.
                                 </p>
@@ -135,7 +138,7 @@ class Nasa extends Component {
                     <article className="nasa__project-develop">
                         <div className="text-container spacing-5vh text-centered column">
                             <div className="line-c"></div>
-                            <p className="heading_list">Develop<br /><span>👩‍💻</span></p>
+                            <p className="heading_list">Develop<br /><span role="img" aria-label="Developer">👩‍💻</span></p>
                         </div>
                         <div className="text-container text-centered column">
                             <p className="paragraph_1">
@@ -145,7 +148,7 @@ class Nasa extends Component {
                                 We decided to create minigames about the core elements we found in the previous stage, such like: Colors, fruits and food, Roles in the community and finally, the foundation myth.
                             </p>
                         </div>
-                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_difficulty.png"} alt="" />
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_difficulty.png"} alt="Difficulty chart" />
                         <div className="text-container text-centered column">
                             <p className="paragraph_1">
                                 We defined an organic growth the games, a learning curve from the most basic expressions to more complex sentences and  meaning.
@@ -153,13 +156,13 @@ class Nasa extends Component {
                             <p className="paragraph_1"><strong>So, my work intensifies here.</strong></p>
                             <p className="paragraph_1">There were weeks where learning new words was daily, staying in touch with the teacher, asking about every step forward I take, being careful and not making any mistakes that can offend the community.</p>
                         </div>
-                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_words.png"} alt="" />
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_words.png"} alt="Words in Nasa Yuwe language" />
                         <div className="text-container text-centered column">
                             <p className="paragraph_1">
                                 I created a list of words and a bunch of wireframes trying to create each interaction with the level that it needs.
                             </p>
                         </div>
-                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_wireframes.png"} alt="" />
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_wireframes.png"} alt="Wireframes of the main screens" />
                         <div className="text-container text-centered column">
                             <p className="paragraph_1">
                                 After defining every single word, every single term, every single story that we wanted to share, was possible creating the art for the game.
@@ -168,13 +171,13 @@ class Nasa extends Component {
                                 One of the most important activities that we made in field was draw with the kids, we wanted to get how the identify themselves, how they see each other, how they draw their house, the colors they use and every single aspect that we can find to elaborate and create something that really represents the community.
                             </p>
                         </div>
-                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_draws.png"} alt="" />
+                        <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_draws.png"} alt="Kids draws" />
                     </article>
                 </article>
                 <article className="nasa__project-deliver">
                     <div className="text-container spacing-5vh text-centered column">
                         <div className="line-d"></div>
-                        <p className="heading_list">Deliver<br /><span>📬</span></p>
+                        <p className="heading_list">Deliver<br /><span role="img" aria-label="Mail-box">📬</span></p>
                     </div>
                     <div className="text-container text-centered column">
                         <p className="paragraph_1">
@@ -182,13 +185,13 @@ class Nasa extends Component {
                         </p>
 
                     </div>
-                    <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_laptop-interface.png"} alt="" />
+                    <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_laptop-interface.png"} alt="Old laptop displaying home-screen interface" />
                     <div className="text-container text-centered column spacing-5vh">
                         <p className="paragraph_1">
                             We created the software and after all, we deliver a version that we were proud of. We went again to La primavera, but … nothing works properly.
                         </p>
                     </div>
-                    <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_school.jpg"} alt="" />
+                    <img className="nasa__project-deliver-img column" src={process.env.PUBLIC_URL + "/images/projects/nasa/project/nasa_project_school.jpg"} alt="Community school" />
                     <div className="half-container spacing-5vh">
                         <div className="left text-container text-centered">
                             <p className="paragraph_1 wide-90">
@@ -210,7 +213,7 @@ class Nasa extends Component {
                 <article className="nasa__project-learning spacing-10vh">
                     <div className="half-container">
                         <div className="left">
-                            <p className="heading_1">So, <br /> What I learned? <br /> <span>🤔</span></p>
+                            <p className="heading_1">So, <br /> What I learned? <br /> <span role="img" aria-label="Thinking face">🤔</span></p>
                         </div>
                         <div className="right">
                             <p className="paragraph_1">
@@ -234,10 +237,16 @@ class Nasa extends Component {
                             That's all folks!
                         </p>
                         <p className="paragraph_1">
-                            Thanks for being here with me, <br /> I appreciate it. <span>😊</span>
+                            Thanks for being here with me, <br /> I appreciate it. <span role="img" aria-label="Happy face">😊</span>
                         </p>
                     </div>
                 </footer>
+                <div className="right text-right spacing-10vh-bottom">
+                    <a className="header__scroll" href="/projects/cognosis">
+                        <h2>Check out this health project<span role="img" aria-label="Brain">🧠</span></h2>
+                        <img className="img-small-vertical-right rotated" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
+                    </a>
+                </div>
             </main>
         );
     }
