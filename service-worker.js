@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/keonsinkryte-app/precache-manifest.6d71f87f3497c64440382e5447b605c8.js"
+  "/keonsinkryte-app/precache-manifest.0f418b394a2fc720276ce6a7d3731ddd.js"
 );
 
 self.addEventListener('message', (event) => {
