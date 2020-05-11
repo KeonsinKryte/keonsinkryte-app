@@ -15,7 +15,7 @@ import NotFound from '../NotFound/NotFound';
 class App extends Component {
     render() {
         return (
-            <Router basename={window.location.pathname || ''}>
+            <Router basename={process.env.PUBLIC_URL}>
                 <ScrollToTop></ScrollToTop>
                 <div className="app">
                     <div className="app__container">
