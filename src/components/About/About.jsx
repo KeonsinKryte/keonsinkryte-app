@@ -14,7 +14,7 @@ class About extends Component {
                         <p className="paragraph_1">
                             I’m a UX Researcher/Designer in love with interaction systems <span role="img" aria-label="Technology">🦾</span>, cities <span role="img" aria-label="Skycrapers">🏙️</span>, people <span role="img" aria-label="People">🧑🏻‍🤝‍🧑🏻</span>, solving problems <span role="img" aria-label="Puzzle">🧩</span> and trying to understand how the the world works <span role="img" aria-label="Map">🗺️</span>.
                                 <br /><br />
-                                A designer playing sandbox games. I really love them. I like build cities (That map it's from my recent project: San Luterio), try new layouts create walkable cities and focus on sustainable growth.
+                                A designer playing sandbox games. I really love them. I like building cities (That map it's from my recent project: San Luterio), trying new layouts to create walkable cities and focusing on sustainable growth.
                                 <br /><br />
                                 I believe in economic growth and well being as an opportunity for Design disciplines. Our responsibility it’s provide tools for social impact.
                                 <br /><br />

@@ -40,7 +40,7 @@ class Header extends Component {
                         <article className="left__text">
                             <h2 className="left__greeting">Hey!</h2>
                             <p className="left__paragraph">
-                                I'm <strong><span className="left__highlighted"> Mauricio Botero </span></strong>, a designer and researcher in love of creating great experiences for users. Capable of research, analyze and propouse new ideas based on user’s necessities.
+                                I'm <strong><span className="left__highlighted"> Mauricio Botero </span></strong>, a designer and researcher, in love of creating great experiences for users. Capable of researching, analyzing and proposing new ideas based on users necessities.
                                 <br />
                                 <br />
                                 Emphatic and believing in design as a research, analytical, versatile, transversal and proactive discipline.

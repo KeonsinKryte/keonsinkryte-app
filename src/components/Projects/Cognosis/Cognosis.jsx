@@ -65,7 +65,7 @@ class Cognosis extends Component {
                         <p className="heading_1 left">Our approach</p>
                         <div className="right">
                             <p className="paragraph_1 text-left">
-                                We decided divide our research in three parts due the complexity of our interaction map.
+                                We decided to divide our research in three parts due the complexity of our interaction map.
                                 <br />
                                 <br />
                                 Three users, each one with it’s own necessities, problems and pains.
@@ -75,13 +75,13 @@ class Cognosis extends Component {
                     <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/cognosis/project/cognosis_project_users.png"} alt="Cognosis user chart" />
                     <div className="text-container text-centered column">
                         <p className="paragraph_1">
-                            This project was a clear possibility to use the double diamond methodology, but this time our research needs to follow some requirements from our medical specialists and support ongoing investigations from our partners around the topic.
+                            This project was a clear possibility to use the double diamond methodology, but this time our research needed to follow some requirements from our medical specialists and support ongoing investigations from our partners around the topic.
                         </p>
                     </div>
                     <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/common/project_diamond-diagram.png"} alt="Double Diamond diagram" />
                     <div className="text-container text-centered column">
                         <p className="paragraph_1">
-                            By now, we going to start talking about Parkinson’s, what it means for patient, what’s the role of a specialist, be clear of the limits, pains, opportunities and frustrations.
+                            By now, we are going to start talking about Parkinson’s, what it means for patient, what’s the role of a specialist, be clear of the limits, pains, opportunities and frustrations.
                         </p>
                     </div>
                 </article>
@@ -96,17 +96,17 @@ class Cognosis extends Component {
                         </p>
                         <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/cognosis/project/cognosis_project_damage.png"} alt="Brain damage over time" />
                         <p className="paragraph_1">
-                            Being such a large and massive disease, we decided to focus mainly on cognitive symptom, such as: loss of orientation, short-term memory loss, recognition failure and among others that affects patient’s daily life.
+                            Being such a large and massive disease, we decided to mainly  focus on cognitive symptoms, such as: loss of orientation, short-term memory loss, recognition failure, among others that affect patient’s daily life.
                         </p>
                     </div>
 
                     <div className="text-container text-centered column spacing-5vh">
                         <p className="paragraph_1 spacing-5vh-bottom">
-                            It’s here where the specialist comes into the game. This one is in charge of diagnosing the advance of the disease and reposibly of create a treatment to reduce (Sadly, there’s no cure for Parkinson’s) the symptoms and extends the patient’s life quality for a while.
+                            It’s here where the specialist comes into the game. They are in charge of diagnosing the advance of the disease and reposibly of create a treatment to reduce (Sadly, there’s no cure for Parkinson’s) the symptoms and extends the patient’s life quality for a while.
                         </p>
                         <h5>So, for a doctor, how the diagnostic it’s made?</h5>
                         <p className="paragraph_1 spacing-10vh-top">
-                            Like every disease, Parkinson’s requires standards that establish ranges and limits within the pathology.
+                            Like every disease, Parkinson’s requires some standards that establish ranges and limits within the pathology.
                             <br />
                             <br />
                             By this precept, different medical organizations have created specific tools for diagnostics of multiple symptoms to ensure the correct measurement and precise treatment such as PD-CFRS, PD-NMS Q, Yesavage, MD-PQRS, MoCA, among others.
@@ -121,7 +121,7 @@ class Cognosis extends Component {
                             There’s something in common in all these tests and that is their inefficiency.
                             <br />
                             <br />
-                            You can barely imagine a doctor asking a patient 76+ questions, using all the time they meet trying to solve one of those test. The information that you get it’s quite important, but if you have to do it in three or four sessions with your doctor something it’s not working fine.
+                            You can barely imagine a doctor asking a patient <strong>76+ questions</strong>, using all the time when they meet, trying to solve one of those test. The information that you get it’s quite important, but if you have to do it in three or four sessions with your doctor something it’s not working fine.
                         </p>
                     </div>
                     <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/cognosis/project/cognosis_project_journey-map.png"} alt="Double Diamond diagram" />
@@ -152,8 +152,7 @@ class Cognosis extends Component {
                                 For doctors, time is the most important variable. A little bit late and there’s no much you can do.
                                 <br />
                                 <br />
-                                For patients, it’s quite important understand what’s happening in their body, understanding the complexity of a disease and giving solutions that can improve lightly (Due Parkinson’s it’s a catastrophic illness) their life quality.
-
+                                For patients, it’s quite important to understand what’s happening in their body, understanding the complexity of a disease and giving solutions that can improve lightly (Due Parkinson’s it’s a catastrophic illness) their life quality.
                             </p>
                         </div>
                         <img src="" alt="" />
@@ -169,7 +168,7 @@ class Cognosis extends Component {
                     </div>
                     <div className="text-container text-centered column spacing-5vh">
                         <p className="paragraph_1">
-                            One of the most important things we discovered was that patients just want a slightly better life quality, being independent and feel completely useful for themselves and their families.
+                            One of the most important things we discovered was that patients just want a slightly better life quality, being independent and to feel completely useful for themselves and their families.
                         </p>
                         <p className="paragraph_1">
                             This is a powerful insight, but at the same time our biggest frustration.
@@ -203,7 +202,7 @@ class Cognosis extends Component {
                         <div className="text-container">
                             <h5>Satisfaction.<span role="img" aria-label="Relieved face">😌</span></h5>
                             <p className="paragraph_1 right">
-                                It’s not just how many tests the doctor can make in one day, it’s the quality time they share with their patient, enjoy the evaluation process, being able to connect specialists and patients building trust and sense of care.
+                                It’s not just how many tests the doctor can make in one day, it’s the quality time they share with their patient, it's the enjoyment in the evaluation process, being able to connect specialists and patients building trust and a sense of care.
                             </p>
                         </div>
                     </div>
@@ -212,7 +211,7 @@ class Cognosis extends Component {
                         <div className="text-container">
                             <h5>If it works don't touch it.<span role="img" aria-label="Grimacing face">😬</span></h5>
                             <p className="paragraph_1 right">
-                                The tests works, the questions are the necessary to get the correct information. The problem is the form factor, hard to understand and pretty slow to apply.
+                                The tests works, the questions are the necessary to get the correct information. The problem is the form factor, it is hard to understand and pretty slow to apply.
                             </p>
                         </div>
                     </div>
@@ -255,10 +254,10 @@ class Cognosis extends Component {
                     </div>
                     <div className="text-container text-centered column spacing-5vh">
                         <p className="paragraph_1">
-                            As we’ve talked before we have some partners and our works will be defined by the general guidelines.
+                            As it's said before we have some partners and our work will be defined by the general guidelines.
                         </p>
                         <p className="paragraph_1">
-                            <strong><a href="https://www.icesi.edu.co/i2t/teleco/index.php" target="blank">i2t Research Group</a></strong>, <strong><a href="https://valledellili.org" target="blank">Fundación Valle del Lili</a></strong> and <strong><a href="https://www.icesi.edu.co" target="blank">Universidad Icesi</a></strong>  have developed a robust evaluation system that provides information about the patients, such like Levodopa routines, intensify and rate of symptoms like freezing, balance and falls and among other features that helps in Parkinson’s diagnostic and provide the specialist a clear vision of what’s happening in the patient’s body.
+                            <strong><a href="https://www.icesi.edu.co/i2t/teleco/index.php" target="blank">i2t Research Group</a></strong>, <strong><a href="https://valledellili.org" target="blank">Fundación Valle del Lili</a></strong> and <strong><a href="https://www.icesi.edu.co" target="blank">Universidad Icesi</a></strong>  have developed a robust evaluation system that provides information about the patients, such as Levodopa routines, intensify and rate of symptoms like freezing, balance and falls and among other features that help in Parkinson’s diagnostic and provide the specialist a clear vision of what’s happening in the patient’s body.
                         </p>
                     </div>
                     <img className="img-centered column" src={process.env.PUBLIC_URL + "/images/projects/cognosis/project/cognosis_project_cognosis.png"} alt="Projects distribution and impact" />
@@ -266,7 +265,7 @@ class Cognosis extends Component {
                         <div className="left spacing-5vh-left">
                             <h5>Cognosis™</h5>
                             <p className="paragraph_1 text-left wide-90">
-                                Our work going to take place inside PDdaily, a mobile application designed for the use of Parkinson's patients or their caregivers that allows them to control the intake of their medications, record events such as tremor and dyskinesias, and share that information collected in real time with their respective doctors to through a web platform. It is made up of 6 functionalities:
+                                Our work going to take place inside PDdaily, a mobile application designed for the use of Parkinson's patients or their caregivers that allow them to control the intake of their medications, record events such as tremor and dyskinesias, and share that information collected in real time with their respective doctors to through a web platform. It is made up of 6 functionalities:
                                 <br />
                                 <br />
                                 <strong>1.</strong> It maintains the information of the person, condition and medical treatment.
@@ -314,7 +313,7 @@ class Cognosis extends Component {
                         <div className="left spacing-5vh-left centered">
                             <h5>Question Form.</h5>
                             <p className="paragraph_1">
-                                After applying in a patient the Cognitive impairment Map the doctor decide which form send to the patient.
+                                After applying in a patient the Cognitive impairment Map the doctor decides which form send to the patient.
                             </p>
                         </div>
                         <img className="img-right" src={process.env.PUBLIC_URL + "/images/projects/cognosis/project/cognosis_project_forms.png"} alt="Forms used by doctors" />
@@ -347,7 +346,7 @@ class Cognosis extends Component {
                         </div>
                         <div className="right">
                             <p className="paragraph_1 wide-90">
-                                By now, we still developing the App using our research as a guide. Our biggest concern is the Cognitive tests, we think it needs a lot of testing to ensure that the performance is at least the same as the traditional methods.
+                                By now, we still developing the App using our research as a guide. Our biggest concern are the Cognitive tests, we think they need a lot of testing to ensure that the performance is at least the same as the traditional methods.
                             </p>
                         </div>
                     </div>
