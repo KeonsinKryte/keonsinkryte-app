@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import ReactGA from 'react-ga';
 import createHistory from "history/createBrowserHistory"
 
 export const history = createHistory()
@@ -12,6 +12,8 @@ history.listen((location, action) => {
 class Duino extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
+        ReactGA.initialize('UA-167062471-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }
     componentDidUpdate() {
         window.scrollTo(0, 0);
