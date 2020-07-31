@@ -23,7 +23,7 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-                <article className="header__left">
+                {/* <article className="header__left">
                     <div className="left__content">
                         <p className="left__title">
                             I <img className="left__image" src={process.env.PUBLIC_URL + "/icons/heart.svg"} alt="Red heart" /> <br /> Design
@@ -47,18 +47,14 @@ class Header extends Component {
                         </p>
                         </article>
                     </div>
-                </article>
-                <article className="header__right">
-                    <div className="right__content">
-                        <Cover></Cover>
-                    </div>
-                    <div className="right text-right">
-                        <a onClick={() => scroll.scrollTo(1075)} className="header__scroll">
-                            <h2>Check out my work!</h2>
-                            <img className="img-small-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
-                        </a>
-                    </div>
-                </article>
+                </article> */}
+                <Cover></Cover>
+                <div className="right text-right">
+                    <a onClick={() => scroll.scrollTo(1075)} className="header__scroll">
+                        <h2>Check out my work!</h2>
+                        <img className="img-tiny-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
+                    </a>
+                </div>
             </header>
         );
     }

@@ -21,7 +21,7 @@ class Viewer extends Component {
                     </main>
                 </div>
                 <div className="right text-right">
-                    <a onClick={() => scroll.scrollTo(2050)} className="header__scroll">
+                    <a onClick={() => scroll.scrollTo(2100)} className="header__scroll">
                         <h2>About me!</h2>
                         <img className="img-tiny-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
                     </a>

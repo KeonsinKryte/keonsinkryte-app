@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 100%;
   margin: auto;
   margin-top: 7vh;
@@ -14,6 +14,7 @@
 
   &__left {
     width: 50%;
+    float: left;
     background: white;
   }
 
@@ -39,23 +40,23 @@
     float: left;
     overflow: hidden;
     position: relative;
-    height: 1em;
-    top: 0em;
+    height: 1rem;
+    top: 0rem;
   }
 
   &__title {
-    height: 1.5em;
-    font-size: 1.35em;
+    height: 1.5rem;
+    font-size: 1.35rem;
     float: left;
   }
 
   &__image {
-    width: 0.75em;
+    width: 0.75rem;
     height: auto;
   }
 
   &__text {
-    margin-top: 8em;
+    margin-top: 8rem;
   }
 
   &__highlighted {
@@ -64,12 +65,12 @@
   }
 
   &__paragraph {
-    font-size: 0.3em;
+    font-size: 0.3rem;
     font-weight: 300;
   }
 
   &__greeting {
-    font-size: 0.3em;
+    font-size: 0.3rem;
   }
 
   &__words {
@@ -104,15 +105,15 @@
     top: 0em;
   }
   20% {
-    top: -0.25em;
+    top: -0.25rem;
   }
   40% {
-    top: -1.4em;
+    top: -1.4rem;
   }
   60% {
-    top: -2.6em;
+    top: -2.6rem;
   }
   80% {
-    top: -3.9em;
+    top: -3.9rem;
   }
 }

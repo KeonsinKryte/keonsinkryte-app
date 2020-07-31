@@ -1,26 +1,28 @@
 #container {
-  perspective: 50px;
+  perspective: 30px;
   perspective-origin: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto auto auto;
 }
 
 .inner {
-  width: 60vh;
-  height: 60vh;
-  max-width: 60vh;
+  width: 80vh;
+  height: 80vh;
+  max-width: 80vh;
   z-index: 0;
   overflow: hidden;
   position: relative;
   vertical-align: middle;
   transition: transform 0.5s;
-  float: right;
   cursor: none;
 
   &__image {
-    height: 40%;
+    height: 55%;
     width: auto;
     perspective: 5px;
     margin: auto auto auto auto;
-    right: 8.25vh;
+    right: 20vh;
     top: 0;
     bottom: 0;
     overflow: hidden;
@@ -30,12 +32,12 @@
 
   &__blur {
     overflow: hidden;
-    height: 55%;
-    width: 55%;
+    height: 75%;
+    width: 75%;
     border-radius: 50%;
     z-index: 0;
     margin: auto auto auto auto;
-    right: 3vh;
+    right: 10vh;
     top: 0;
     bottom: 0;
     position: absolute;
