@@ -12,7 +12,7 @@ history.listen((location, action) => {
 class Cognosis extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        ReactGA.initialize('G-RH7YG2WYCK');
+        ReactGA.initialize('UA-167062471-1');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
     componentDidUpdate() {
