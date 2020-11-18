@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router-dom';
 
 import Header from '../Header/Header';
@@ -14,10 +13,6 @@ import About from '../About/About';
 import NotFound from '../NotFound/NotFound';
 
 class App extends Component {
-    componentDidMount () {
-        ReactGA.initialize('UA-167062471-1');
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }
     render() {
         return (
             <HashRouter basename={`${process.env.PUBLIC_URL}/`}>
