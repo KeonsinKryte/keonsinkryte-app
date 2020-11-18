@@ -12,7 +12,7 @@ history.listen((location, action) => {
 class Nasa extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        ReactGA.initialize('UA-167062471-1');
+        ReactGA.initialize('G-RH7YG2WYCK');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
     componentDidUpdate() {

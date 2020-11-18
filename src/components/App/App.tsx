@@ -14,6 +14,10 @@ import About from '../About/About';
 import NotFound from '../NotFound/NotFound';
 
 class App extends Component {
+    componentDidMount () {
+        ReactGA.initialize('G-RH7YG2WYCK');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
     render() {
         return (
             <HashRouter basename={`${process.env.PUBLIC_URL}/`}>
