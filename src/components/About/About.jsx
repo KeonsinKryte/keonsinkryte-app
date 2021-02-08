@@ -25,7 +25,7 @@ class About extends Component {
 
                     </div>
                 </div>
-                <div className="right text-right spacing-10vh-top">
+                <div className="right text-right spacing-10vh">
                     <a onClick={() => scroll.scrollToBottom()} className="header__scroll">
                         <h2>Contact me!</h2>
                         <img className="img-tiny-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
