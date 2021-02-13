@@ -1,0 +1,17 @@
+.gallery {
+    margin-top: 20vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block {
+        height: 65vh;
+        display: flex;
+        justify-content: space-between;
+    }
+}

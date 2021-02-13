@@ -1,119 +1,130 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  margin: auto;
-  margin-top: 7vh;
 
-  &__scroll {
-    scroll-behavior: smooth;
-    transition: ease 3s;
-    cursor: pointer;
-
-  }
-
-  &__left {
-    width: 50%;
-    float: left;
-    background: white;
-  }
-
-  &__right {
-    width: 50%;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+header{
+  margin-top: 10vh;
 }
 
-.left {
-  &__content {
-    padding: 1em 0em;
-    font-family: $main-font, sans-serif;
-    font-weight: 700;
-    font-size: 4em;
-    color: $main-color;
-  }
+//--------------------------------------------------------
+//This elements are from one experiment about words rolling.
+//--------------------------------------------------------
 
-  &__container {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    height: 1rem;
-    top: 0rem;
-  }
 
-  &__title {
-    height: 1.5rem;
-    font-size: 1.35rem;
-    float: left;
-  }
+// .header {
+//   display: flex;
+//   flex-direction: column;
+//   max-width: 100%;
+//   margin: auto;
+//   margin-top: 7vh;
 
-  &__image {
-    width: 0.75rem;
-    height: auto;
-  }
+//   &__scroll {
+//     scroll-behavior: smooth;
+//     transition: ease 3s;
+//     cursor: pointer;
 
-  &__text {
-    margin-top: 8rem;
-  }
+//   }
 
-  &__highlighted {
-    background-color: $main-color;
-    color: white;
-  }
+//   &__left {
+//     width: 50%;
+//     float: left;
+//     background: white;
+//   }
 
-  &__paragraph {
-    font-size: 0.3rem;
-    font-weight: 300;
-  }
+//   &__right {
+//     width: 50%;
+//     float: right;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//   }
+// }
 
-  &__greeting {
-    font-size: 0.3rem;
-  }
+// .left {
+//   &__content {
+//     padding: 1em 0em;
+//     font-family: $main-font, sans-serif;
+//     font-weight: 700;
+//     font-size: 4em;
+//     color: $main-color;
+//   }
 
-  &__words {
-    display: inline-block;
-    font-weight: 500;
-    font-style: italic;
-    color: $main-color;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
+//   &__container {
+//     float: left;
+//     overflow: hidden;
+//     position: relative;
+//     height: 1rem;
+//     top: 0rem;
+//   }
 
-    -webkit-animation: move 7.5s;
-    -moz-animation: move 7.5s;
-    -o-animation: move 7.5s;
-    animation: move 7.5s;
+//   &__title {
+//     height: 1.5rem;
+//     font-size: 1.35rem;
+//     float: left;
+//   }
 
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+//   &__image {
+//     width: 0.75rem;
+//     height: auto;
+//   }
 
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    -o-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-  }
-}
+//   &__text {
+//     margin-top: 8rem;
+//   }
 
-@keyframes move {
-  0% {
-    top: 0em;
-  }
-  20% {
-    top: -0.25rem;
-  }
-  40% {
-    top: -1.4rem;
-  }
-  60% {
-    top: -2.6rem;
-  }
-  80% {
-    top: -3.9rem;
-  }
-}
+//   &__highlighted {
+//     background-color: $main-color;
+//     color: white;
+//   }
+
+//   &__paragraph {
+//     font-size: 0.3rem;
+//     font-weight: 300;
+//   }
+
+//   &__greeting {
+//     font-size: 0.3rem;
+//   }
+
+//   &__words {
+//     display: inline-block;
+//     font-weight: 500;
+//     font-style: italic;
+//     color: $main-color;
+//     position: relative;
+//     white-space: nowrap;
+//     top: 0;
+//     left: 0;
+
+//     -webkit-animation: move 7.5s;
+//     -moz-animation: move 7.5s;
+//     -o-animation: move 7.5s;
+//     animation: move 7.5s;
+
+//     -webkit-animation-iteration-count: infinite;
+//     -moz-animation-iteration-count: infinite;
+//     -o-animation-iteration-count: infinite;
+//     animation-iteration-count: infinite;
+
+//     -webkit-animation-delay: 1.5s;
+//     -moz-animation-delay: 1.5s;
+//     -o-animation-delay: 1.5s;
+//     animation-delay: 1.5s;
+//   }
+// }
+
+// @keyframes move {
+//   0% {
+//     top: 0em;
+//   }
+//   20% {
+//     top: -0.25rem;
+//   }
+//   40% {
+//     top: -1.4rem;
+//   }
+//   60% {
+//     top: -2.6rem;
+//   }
+//   80% {
+//     top: -3.9rem;
+//   }
+// }
+//-------------------------------------------------------------

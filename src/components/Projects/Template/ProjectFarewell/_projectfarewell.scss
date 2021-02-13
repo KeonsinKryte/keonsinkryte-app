@@ -1,0 +1,10 @@
+.project {
+    &__farewell {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        text-align: center;
+    }
+}

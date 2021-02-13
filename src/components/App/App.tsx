@@ -4,13 +4,15 @@ import { BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-import Viewer from '../Projects/Viewer/Viewer';
-import Cognosis from '../Projects/Cognosis/Cognosis';
-import Duino from '../Projects/Duino/Duino';
 import Nasa from '../Projects/Nasa/Nasa';
 import ScrollToTop from './ScrollToTop';
 import About from '../About/About';
 import NotFound from '../NotFound/NotFound';
+import ProjectGallery from '../Projects/Template/ProjectGallery/ProjectGallery';
+import Incognitus from '../Projects/Incognitus/Incognitus';
+import Duino from '../Projects/Duino/Duino';
+import Bancoomeva from '../Projects/Bancoomeva/Bancoomeva';
+import Eficacia from '../Projects/Eficacia/Eficacia';
 
 class App extends Component {
     render() {
@@ -18,27 +20,35 @@ class App extends Component {
             <HashRouter basename={`${process.env.PUBLIC_URL}/`}>
                 <ScrollToTop></ScrollToTop>
                 <div className="app">
-                    <div className="app__container">
+                    <div className="container">
                         <Nav></Nav>
-                        <Switch>
-                            <Route exact path='/'>
-                                <Header></Header>
-                                <Viewer></Viewer>
-                                <About></About>
-                            </Route>
-                            <Route exact path='/projects/cognosis'>
-                                <Cognosis></Cognosis>
-                            </Route>
-                            <Route exact path='/projects/duino'>
-                                <Duino></Duino>
-                            </Route>
-                            <Route exact path='/projects/nasa'>
-                                <Nasa></Nasa>
-                            </Route>
-                            <Route path="*">
-                                <NotFound></NotFound>
-                            </Route>
-                        </Switch>
+                        <div className="container-expand-lg row">
+                            <Switch>
+                                <Route exact path='/'>
+                                    <Header></Header>
+                                    <ProjectGallery></ProjectGallery>
+                                    <About></About>
+                                </Route>
+                                <Route exact path='/projects/incognitus'>
+                                    <Incognitus></Incognitus>
+                                </Route>
+                                <Route exact path='/projects/duino'>
+                                    <Duino></Duino>
+                                </Route>
+                                <Route exact path='/projects/nasa'>
+                                    <Nasa></Nasa>
+                                </Route>
+                                <Route exact path='/projects/bancoomeva'>
+                                    <Bancoomeva></Bancoomeva>
+                                </Route>
+                                <Route exact path='/projects/eficacia'>
+                                    <Eficacia></Eficacia>
+                                </Route>
+                                <Route path="*">
+                                    <NotFound></NotFound>
+                                </Route>
+                            </Switch>
+                        </div>
                     </div>
                     <Footer></Footer>
                 </div>

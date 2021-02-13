@@ -1,29 +1,16 @@
 import React, { Component } from 'react';
 import Cover from '../Cover/Cover';
-import { Events, animateScroll as scroll, scroller } from 'react-scroll'
+import ScrollHandler from '../Handlers/ScrollHandler/ScrollHandler'
 
 class Header extends Component {
-    componentDidMount() {
-        Events.scrollEvent.register('begin', function () {
-            console.log("begin", arguments);
-        });
-
-        Events.scrollEvent.register('end', function () {
-            console.log("end", arguments);
-        });
-    }
-
-    scrollTo() {
-        scroller.scrollTo('scroll-to-element', {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        })
-    }
     render() {
         return (
-            <header className="header">
-                {/* <article className="header__left">
+            <header className="container">
+                {/* 
+                --------------------------------------------------------------
+                WORDS EXPERIMENT
+                --------------------------------------------------------------
+                <article className="header__left">
                     <div className="left__content">
                         <p className="left__title">
                             I <img className="left__image" src={process.env.PUBLIC_URL + "/icons/heart.svg"} alt="Red heart" /> <br /> Design
@@ -48,13 +35,10 @@ class Header extends Component {
                         </article>
                     </div>
                 </article> */}
-                <Cover></Cover>
-                <div className="right text-right">
-                    <a onClick={() => scroll.scrollTo(1075)} className="header__scroll">
-                        <h2>Check out my work!</h2>
-                        <img className="img-tiny-vertical-right" src={process.env.PUBLIC_URL + "/icons/arrow.svg"} alt="Blue Arrow" />
-                    </a>
+                <div className="row">
+                    <Cover></Cover>
                 </div>
+                <ScrollHandler title={"Checkout my work!"} target={1100}></ScrollHandler>
             </header>
         );
     }

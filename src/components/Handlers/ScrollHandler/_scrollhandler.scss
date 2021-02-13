@@ -1,0 +1,19 @@
+.scrollhandler {
+    margin: auto;
+    margin-right: 0;
+    float: right;
+    cursor: pointer;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        float: right;
+        right: 0;
+    }
+
+    &__img {
+        width: 7vh;
+        height: auto;
+    }
+}

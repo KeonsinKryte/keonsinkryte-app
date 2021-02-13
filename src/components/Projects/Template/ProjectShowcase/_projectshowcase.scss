@@ -1,0 +1,54 @@
+.project {
+    &__showcase {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+
+        &-top {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            font-size: 5rem;
+        }
+
+        &-bottom {
+            float: right;
+        }
+
+        &-a {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+            height: 25vh;
+            margin-top: 10vh;
+        }
+
+        &-img {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-main {
+            height: 40vh;
+            margin-top: 5vh;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-text {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}

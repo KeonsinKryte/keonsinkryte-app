@@ -1,0 +1,22 @@
+.project {
+    &__define {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+
+        &-top {
+            text-align: left;
+            font-size: 5rem;
+        }
+
+        &-bottom {
+            float: right;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
