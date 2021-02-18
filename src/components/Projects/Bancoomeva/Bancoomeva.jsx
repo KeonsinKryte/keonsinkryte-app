@@ -82,7 +82,7 @@ class Bancoomeva extends Component {
                     showcase__tittle_b={"Be part of my future"} showcase__text_b={"Entrepreneurs can propose a student to the fund, also, read stories and follow the path of the student that supports."}
                 ></ProjectShowcase>
                 <Learn
-                    learn__tittle={["So,", <br></br>, "What I learned", <br></br>, <span role="img" aria-label="Thinking face">🤔</span>]}
+                    learn__tittle={["So,", <br></br>, "What I learned ...", <br></br>, <span role="img" aria-label="Thinking face">🤔</span>]}
                     learn__text={["Was a wonderful experience working with people that really felt uncomfortable about their approach to young people. Sometimes, the companies never imagine that their perception is bad in some age groups and never try to change their behavior.", <br></br>, <br></br>, "This time, Bancoomeva was very receptive to what we can tell about their products, communication, and approach. Millennials have some massive problems with accessibility, and the banking system endorses these barriers. This has to end and Bancoomeva wants it too. This mood provides us the trust and back support for making this product possible."]}
                 ></Learn>
                 <ProjectFarewell

@@ -82,7 +82,7 @@ class Nas extends Component {
                     showcase__tittle_b={"Self recognition"} showcase__text_b={"One of the most important activities that we made in field was draw with the kids, we wanted to get how the identify themselves, how they see each other, how they draw their house, the colors they use and every single aspect that we can find to elaborate and create something that really represents the community."}
                 ></ProjectShowcase>
                 <Learn
-                    learn__tittle={["So,", <br ></br>, "What I learned", <br></br>, <span role="img" aria-label="Thinking face">🤔</span>]}
+                    learn__tittle={["So,", <br ></br>, "What I learned ...", <br></br>, <span role="img" aria-label="Thinking face">🤔</span>]}
                     learn__text={["There’s something special when you work for a community. The kids enjoying something that you’ve created for them, the gratitude that we received and the satisfaction for creating a tool for learning an essential cultural topic.", <br></br>, <br></br>, "One of the greatest lessons I learned through this project, was the ability to get insights from an unknown culture, everything was new for me; the language, the meaning of nature, the relationship with the soil, the social hierarchy and the resilience of a whole community.", <br></br>, <br></br>, "Another great lesson was the ability to create from the inevitable “clash of cultures” between two different world interpretations."]}
                 ></Learn>
                 <ProjectFarewell
