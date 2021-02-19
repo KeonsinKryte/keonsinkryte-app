@@ -83,7 +83,7 @@ class Eficacia extends Component {
                 ></ProjectShowcase>
                 <Learn
                     learn__tittle={["So,", <br></br>, "What I learned ...", <br></br>, <span role="img" aria-label="Thinking face">🤔</span>]}
-                    learn__text={["I’ve never thought that hiring people can be so frustrating. The recruiters office looks like Wall Street people surrounding, talking about some applicants and some requirements… It’s a mess. Eficacia received everything by hand, and then, you have some people transcribing CVs into a .xls file.", <br></br>, <br></br>, "If you are an outsider you easily can say … why just not create a system that … They try, but they cannot stop for a single moment. Every single day they receive orders from customers, CVs, ect … This project was challenging, we’re changing an engine while driving a car that is expected to arrive soon."]}
+                    learn__text={["I’ve never thought that hiring people can be so frustrating. The recruiters' office looks like Wall Street people surrounding, talking about some applicants and some requirements… It’s a mess. Eficacia received everything by hand, and then, you have some people transcribing CVs into a .xls file.", <br></br>, <br></br>, "If you are an outsider you easily can say … why just not create a system that … They try, but they cannot stop for a single moment. Every single day they receive orders from customers, CVs, ect … This project was challenging, we’re changing an engine while driving a car that is expected to arrive soon."]}
                 ></Learn>
                 <ProjectFarewell
                     next__tittle={"Checkout this language project"}
